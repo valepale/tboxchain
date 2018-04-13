@@ -37,7 +37,7 @@ class Nav extends React.Component {
 
   render() {
     return (
-       <Scrivito.LinkTag to={ this.getHomepage() } > HOME </Scrivito.LinkTag>
+      <Scrivito.LinkTag to={ this.getHomepage() } > HOME </>
       <Scrivito.ChildListTag
         className="nav navbar-nav navbar-right"
         parent={ Scrivito.Obj.root() }
