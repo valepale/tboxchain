@@ -30,9 +30,14 @@ class Nav extends React.Component {
   unregisterDropdown(dropdownComponent) {
     this.registeredDropdowns = this.registeredDropdowns.filter(i => i !== dropdownComponent);
   }
+  
+  getHomepage() {
+     return Scrivito.Obj.getByPath("/");
+  }
 
   render() {
     return (
+      <Scrivito.LinkTag to={ getHomepage() } > getHomepage().get('title') </Scrivito.LinkTag>
       <Scrivito.ChildListTag
         className="nav navbar-nav navbar-right"
         parent={ Scrivito.Obj.root() }
