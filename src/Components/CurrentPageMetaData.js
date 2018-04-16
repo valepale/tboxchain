@@ -5,7 +5,7 @@ import getMetaData from '../utils/getMetaData';
 import favicon from '../assets/images/favicon.png';
 
 const CurrentPageMetaData = Scrivito.connect(() => {
-  const htmlAttributes = { lang: 'en' };
+  const htmlAttributes = { lang: 'it' };
   let title = '';
   let meta = [];
   const links = [
