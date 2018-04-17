@@ -2,16 +2,18 @@
 # Netlify redirect rules. See https://www.netlify.com/docs/redirects/ for details.
 ##
 
+# Redirect domain aliases to primary domain
+http://www.t-box.it/* http://www.tboxchain.io/
+http://www.tboxchain.it/* http://www.tboxchain.io/
+http://www.tboxchain.com/* http://www.tboxchain.io/
+http://www.tboxchain.info/* http://www.tboxchain.io/
+http://www.tboxchain.cloud/* http://www.tboxchain.io/
+http://www.tboxchain.eu/* http://www.tboxchain.io/
+
 # Scrivito routes
 /404 /index.html 404
 /scrivito/:slug/* /scrivito/index.html 200
 /scrivito /scrivito/index.html 200
 /* /index.html 200
 
-# Redirect domain aliases to primary domain
-http://www.t-box.it/* http://www.tboxchain.io/:splat 301!
-http://www.tboxchain.it/* http://www.tboxchain.io/:splat 301!
-http://www.tboxchain.com/* http://www.tboxchain.io/:splat 301!
-http://www.tboxchain.info/* http://www.tboxchain.io/:splat 301!
-http://www.tboxchain.cloud/* http://www.tboxchain.io/:splat 301!
-http://www.tboxchain.eu/* http://www.tboxchain.io/:splat 301!
+
