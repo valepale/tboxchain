@@ -3,7 +3,7 @@
 ##
 
 # Redirect domain aliases to primary domain
-http://www.t-box.it/* http://www.tboxchain.io/:splat 301!
+http://www.t-box.it/ http://www.tboxchain.io/
 http://www.tboxchain.it/* http://www.tboxchain.io/:splat 301!
 http://www.tboxchain.com/* http://www.tboxchain.io/:splat 301!
 http://www.tboxchain.info/* http://www.tboxchain.io/:splat 301!
