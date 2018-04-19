@@ -36,7 +36,7 @@ class Nav extends React.Component {
     return (
       <Scrivito.ChildListTag
         className="nav navbar-nav navbar-right"
-        parent={ getHomePage() }
+        parent={ getHomepage() }
         renderChild={
           child => <NavChild
             child={ child }
