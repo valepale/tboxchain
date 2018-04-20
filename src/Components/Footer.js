@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as Scrivito from 'scrivito';
-import getHomepage from '../../utils/getHomepage.js';
+import getHomepage from '../utils/getHomepage.js';
 
 function Footer() {
   const root = getHomepage();
