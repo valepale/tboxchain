@@ -3,10 +3,15 @@ import * as Scrivito from 'scrivito';
 import InPlaceEditingPlaceholder from '../../Components/InPlaceEditingPlaceholder';
 
 Scrivito.provideComponent('LinkWidget', ({ widget }) => {
+    const currentPage = Scrivito.currentPage();
+    const path = currentPage.path();
     const link = widget.get('link');
+
 
     const style = widget.get('style') || 'h1';
     const classNames = [style];
+    var tooltipText = 'Vai alla pagina ';
+
     if (widget.get('alignment')) {
         classNames.push(`text-${widget.get('alignment')}`);
     }
@@ -21,9 +26,13 @@ Scrivito.provideComponent('LinkWidget', ({ widget }) => {
                 );
     }
 
+    if (path.includes('/lang/en')) {
+        tooltipText = 'Go to the page ';
+    }
+
     return (
             <Scrivito.WidgetTag tag="li">
-                <Scrivito.LinkTag to={ link } title={ 'Vai alla pagina ' + link.obj().get("title")}>
+                <Scrivito.LinkTag to={ link } title={ tooltipText + link.obj().get("title")}>
                     <div className={ classNames.join(' ') }>
                         <LinkTitle link={ link } />
                     </div>
