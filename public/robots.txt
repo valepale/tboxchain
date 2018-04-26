@@ -1,0 +1,4 @@
+
+User‐agent: *
+Disallow:
+Sitemap: http://www.tboxchain.io/sitemap.xml
