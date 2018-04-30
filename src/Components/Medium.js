@@ -13,7 +13,7 @@ class Medium extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('https://medium.com/tboxchain/latest?format=json').then(response => {
+        axios.get('https://cors.now.sh/https://medium.com/tboxchain/latest?format=json').then(response => {
             console.log('response.data', response.data);
             const prefix = `])}while(1);</x>`
             const strip = payload => payload.replace(prefix, ``)
