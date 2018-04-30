@@ -64,5 +64,7 @@
     "start": "webpack-dev-server --port 8000 --open",
     "eslint": "eslint --max-warnings 1 src/"
   },
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
 }
