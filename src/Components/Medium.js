@@ -13,18 +13,32 @@ class Medium extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('/functions/medium').then(response => {
-            console.log('response.data', response);
-            const prefix = `])}while(1);</x>`
-            const strip = payload => payload.replace(prefix, ``)
-            this.setState({
-                posts: JSON.parse(strip(response.data))
-            });
-        })
-                .catch(error => {
-                    console.log(error);
-                });
-        ;
+        const getWord = async () => {
+            const textBlock = document.getElementById("random-text-p")
+            try {
+                const response = await fetch('/.netlify/functions/text')
+                if (!response.ok) {
+                    throw new Error("The request failed")
+                }
+                const resObj = await response.json()
+                console.log(resObj)
+                textBlock.innerHTML = `Your random text is: <br /> <strong>${resObj.body}</strong>`
+            } catch (err) {
+                textBlock.innerHTML = "Sorry the request failed"
+            }
+        }
+//        axios.get('/functions/medium').then(response => {
+//            console.log('response.data', response);
+//            const prefix = `])}while(1);</x>`
+//            const strip = payload => payload.replace(prefix, ``)
+//            this.setState({
+//                posts: JSON.parse(strip(response.data))
+//            });
+//        })
+//                .catch(error => {
+//                    console.log(error);
+//                });
+//        ;
     }
     render() {
         return (
