@@ -65,6 +65,8 @@
     "eslint": "eslint --max-warnings 1 src/"
   },
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "netlify-lambda": "^0.2.0",
+    "node-fetch": "^1.7.3"
   }
 }
