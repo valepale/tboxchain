@@ -1,8 +1,13 @@
-
-exports.medium = function(event, context, callback) {
-    console.log('medium');
-    callback(null, {
-    statusCode: 200,
-    body: "Hello, World"
-    });
-}
+const functions = require('firebase-functions');
+var request = require('request');
+exports.medium = functions.https.onRequest((req, res) => {
+  if(!req.query.username) {
+    return res.status(400).send('Error: You need to include query param ?username=@yourUsername');
+  }
+  const url = `https://medium.com/${req.query.username}/latest?format=json`;
+  return request(url,(error, response, body) => {
+    const prefix = `])}while(1);</x>`
+    const strip = payload => payload.replace(prefix, ``)
+    res.send(JSON.parse(strip(body)));
+  });
+})
