@@ -13,7 +13,7 @@ class Medium extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('/.netlify/functions/medium').then(response => {
+        axios.get('/functions/medium').then(response => {
             console.log('response.data', response.data);
             const prefix = `])}while(1);</x>`
             const strip = payload => payload.replace(prefix, ``)
