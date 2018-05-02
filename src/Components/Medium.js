@@ -14,7 +14,7 @@ class Medium extends React.Component {
 
     componentDidMount() {
         axios.get('/functions/medium').then(response => {
-            console.log('response.data', response.data);
+            console.log('response.data', response);
             const prefix = `])}while(1);</x>`
             const strip = payload => payload.replace(prefix, ``)
             this.setState({
