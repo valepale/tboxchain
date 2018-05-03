@@ -2,10 +2,14 @@ import * as React from 'react';
 import * as Scrivito from 'scrivito';
 
 Scrivito.provideComponent('ImageWidget', ({ widget }) => {
+    const height = widget.get('height');
+    const width = widget.get('width');
     let image = <Scrivito.ImageTag
         content={ widget }
         attribute="image"
         alt={ alternativeText(widget) }
+        width={width}
+        heigth={height}
         />;
 
     const currentPage = Scrivito.currentPage();
