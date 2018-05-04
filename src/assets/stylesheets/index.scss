@@ -3160,7 +3160,7 @@ _:-ms-fullscreen,
         max-width: 50% !important;
     }
     div[name=nextSection]{
-        padding-top: 73px;
+        padding-top: 60px;
     }
     .social-links{
         margin-top: 30px;
@@ -3172,9 +3172,18 @@ _:-ms-fullscreen,
     footer ul{
         text-align: center !important;
     }
+    .navbar-brand img{
+        margin: 0 auto;
+    }
 }
 .parallax-window {
     min-height: 300px;
     background: transparent;
     width: 100%;
+}
+.d-inline-block{
+    display: inline-block !important;
+}
+.text-uppercase {
+    text-transform: uppercase !important; 
 }
