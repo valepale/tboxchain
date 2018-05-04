@@ -5,7 +5,6 @@ Scrivito.provideEditingConfig('ImageWidget', {
     title: 'Image',
     thumbnail: `/${imageWidgetIcon}`,
     attributes: {
-
         width: {},
         height: {},
         alignment: {
