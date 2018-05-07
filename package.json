@@ -66,7 +66,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "netlify-lambda": "^0.2.0",
+    "moment": "^2.22.1",
     "node-fetch": "^1.7.3"
   }
 }

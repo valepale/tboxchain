@@ -1,5 +1,7 @@
 import React from 'react'
-import axios from 'axios';
+        import axios from 'axios';
+import moment from "moment";
+import * as Scrivito from 'scrivito';
 
 class Medium extends React.Component {
     constructor(props) {
@@ -13,14 +15,17 @@ class Medium extends React.Component {
     }
 
     componentDidMount() {
-       
-        axios.get('/.netlify/functions/text').then(response => {
+        axios.get('https://api.rss2json.com/v1/api.json', {
+            params: {
+                rss_url: 'https://medium.com/feed/tboxchain'
+            }
+        }).then(response => {
             console.log('response.data', response);
-            const prefix = `])}while(1);</x>`
-            const strip = payload => payload.replace(prefix, ``)
+
             this.setState({
-                posts: JSON.parse(strip(response.data))
+                posts: response.data.items
             });
+
         })
                 .catch(error => {
                     console.log(error);
@@ -29,21 +34,36 @@ class Medium extends React.Component {
     }
     render() {
         return (
-                <div>
-                    Medium is where I ramble and rant and tell stories. I orginally was going to use it as a coding blog, I don't like having to use Gist for all my code snippets. So I created this site.
-                    <br /><br />
-                    <a className="button is-inverted is-outlined" href="https://medium.com/@aaron.klaser" target="_blank">
-                        View My Medium
-                        <span className="icon" >
-                            <i className="fab fa-lg fa-medium"></i>
-                        </span>
-                    </a>
-                
-                    <pre>{JSON.stringify(this.state.posts, null, 2)}</pre>
-                
-                </div>
+                this.state.posts.map(function (obj, i) {
+                    const currentPage = Scrivito.currentPage();
+                    const path = currentPage.path();
+                    var title = '';
+                    if (path.includes('/lang/en')) {
+                        moment.locale('en');
+                        title = 'Go to the post';
+                    } else if (path.includes('/lang/it')) {
+                        moment.locale('en');
+                        title = 'Vai al post';
+                    }
+                    const data = moment(obj.pubDate).format("l");
+                    const contentAll = obj.content.replace(/<(?:.|\n)*?>/gm, "");
+                    var contentExtract = contentAll.split(/\s+/).slice(0, 20).join(" ");
+                    const spanStyle = {
+                        fontSize: '15px',
+                        color: '#716f73'
+                    };
+                    const aStyle ={
+                        textDecoration:'none'
+                    };
+                    if (i === 0) {
+                        return <div className="col-lg-12" key={i}><a key={i} style={aStyle} href={obj.link} target="_blank" title={title}><div><img key={i} src={obj.thumbnail} kay={i}/></div><div><h2 key={i}><strong>{obj.title}</strong></h2> </div><div><p>{contentExtract}...</p></div><p key={i} className="text-color-verde">{obj.author}<br /><i key={i} className="fa fa-calendar fa-1x" ></i><span style={spanStyle}>&nbsp;{data}</span></p></a></div>
+                    } else {
+                        return <div className="col-lg-6" key={i}><a key={i} style={aStyle} href={obj.link} target="_blank" title={title}><div><img key={i} src={obj.thumbnail} kay={i}/></div><div><h2 key={i}><strong>{obj.title}</strong></h2> </div><div><p>{contentExtract}...</p></div><p key={i} className="text-color-verde">{obj.author}<br /><i key={i} className="fa fa-calendar fa-1x" ></i><span style={spanStyle}>&nbsp;{data}</span></p></a></div>
+                    }
+                })
                 )
-    }
 
+
+    }
 }
 export default Medium
