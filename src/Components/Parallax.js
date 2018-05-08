@@ -11,7 +11,11 @@ class Parallax extends React.Component {
         console.log('this.props.urlImage', this.props.urlImage);
         script.innerHTML = "$('." + this.props.title + "').parallax({imageSrc: \"" + this.props.urlImage + "\"});";
         script.async = true;
-        setTimeout(() => this.instance.appendChild(script), 2000);
+        this.interval = setTimeout(() => this.instance.appendChild(script), 300);
+    }
+    
+    componentWillUnmount(){
+        clearInterval(this.interval);        
     }
 
     render() {
