@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.40",
+    "@babel/plugin-proposal-decorators": "^7.0.0-beta.46",
     "@babel/preset-env": "^7.0.0-beta.40",
     "@babel/preset-react": "^7.0.0-beta.40",
     "autotrack": "^2.4.1",
@@ -67,6 +68,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "moment": "^2.22.1",
-    "node-fetch": "^1.7.3"
+    "node-fetch": "^1.7.3",
+    "react-responsive-decorator": "0.0.1",
+    "babelify": "^6.0.2"
   }
 }

@@ -3143,6 +3143,9 @@ _:-ms-fullscreen,
 }
 
 @media (max-width: $screen-sm-max) {
+     .border-bottom:after, .page-list-headline:after {
+        background: white
+    }
 }
 
 @media (max-width: $screen-xs-max) {
@@ -3174,6 +3177,9 @@ _:-ms-fullscreen,
     }
     .navbar-brand img{
         margin: 0 auto;
+    }
+    .border-bottom:after, .page-list-headline:after {
+        background: white
     }
 }
 .parallax-window {
