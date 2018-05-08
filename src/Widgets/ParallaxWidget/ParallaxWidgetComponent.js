@@ -7,7 +7,6 @@ Scrivito.provideComponent('ParallaxWidget', ({ widget }) => {
 
   return (
           <Parallax urlImage={widget.get('urlImage')} title={widget.get('title')} text={widget.get('text')}>
-          <div>{widget}</div>
           </Parallax>
  
   );

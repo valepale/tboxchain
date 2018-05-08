@@ -8,7 +8,6 @@ Scrivito.provideComponent('MediumWidget', ({ posts }) => {
 
     return (
             <Medium>
-                <p>{posts}</p>
             </Medium>
             );
 });
