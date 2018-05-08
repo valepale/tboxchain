@@ -3,7 +3,9 @@ import { registerTextExtract } from '../../utils/textExtractRegistry';
 
 const SectionWidget = Scrivito.provideWidgetClass('ParallaxWidget', {
   attributes: {
-    urlImage: 'string'
+    urlImage: 'string',
+    title: 'string',
+    text: 'string'
   }
 });
 

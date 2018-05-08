@@ -249,8 +249,8 @@ a:focus {
 }
 
 p { 
-    font-size: 22px !important;
-    line-height: 28px !important;
+    font-size: 18px !important;
+    line-height:28px !important;
     margin: 0 0 25px 0;
 }
 
@@ -3177,8 +3177,8 @@ _:-ms-fullscreen,
     }
 }
 .parallax-window {
-    min-height: 300px;
-    background: transparent;
+    height: 300px;
+    background: rgba(255, 255, 255, .5);
     width: 100%;
 }
 .d-inline-block{

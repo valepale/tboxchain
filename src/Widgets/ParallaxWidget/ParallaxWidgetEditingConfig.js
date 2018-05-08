@@ -5,11 +5,14 @@ Scrivito.provideEditingConfig('ParallaxWidget', {
   title: 'Parallax',
   thumbnail: `/${sectionWidgetIcon}`,
   attributes: {
-    urlImage: {
-    }
+    urlImage: {},
+    title: {},
+    text: {}
   },
   properties: [
-    'urlImage'
+    'urlImage',
+    'title',
+    'text'
   ]
 
 });
