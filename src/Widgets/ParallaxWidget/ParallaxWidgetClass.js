@@ -3,7 +3,7 @@ import { registerTextExtract } from '../../utils/textExtractRegistry';
 
 const SectionWidget = Scrivito.provideWidgetClass('ParallaxWidget', {
   attributes: {
-    urlImage: 'reference'
+    urlImage: 'string'
   }
 });
 
