@@ -20,13 +20,9 @@ class Medium extends React.Component {
                 rss_url: 'https://medium.com/feed/tboxchain'
             }
         }).then(response => {
-
-            console.log('response.data', response.data.items);
             var contentsIta = [];
             var contentsEn = [];
             var contents = [];
-
-            console.log('this.state.posts', this.state.posts.length);
 
             response.data.items.forEach(function (obj, i) {
                 var intCategories = obj.categories.length;
