@@ -51,7 +51,7 @@ class Parallax extends React.Component {
                                  <h2 className="h2 text-center no-margin border-bottom" style={h2MobileStyle}>{this.props.text}</h2>
                                 : <div>
                                     <div className={backgroundStyle} ref={el => (this.instance = el)}>
-                                        <h3 style={h2Style} >{this.props.text}</h3>
+                                        <h2 style={h2Style} >{this.props.text}</h2>
                                     </div>
                                 </div>
                     }
