@@ -8,9 +8,10 @@ class Medium extends React.Component {
         super(props);
 
         this.state = {
-            posts: []
+            posts: [],
+            title: ''
         }
-        
+
     }
 
     componentDidMount() {
@@ -19,66 +20,55 @@ class Medium extends React.Component {
                 rss_url: 'https://medium.com/feed/tboxchain'
             }
         }).then(response => {
-           
-            console.log('response.data', response);
+
+            console.log('response.data', response.data.items);
             var contentsIta = [];
             var contentsEn = [];
             var contents = [];
+
             console.log('this.state.posts', this.state.posts.length);
-            response.data.items.map(function (obj, i) {
+
+            response.data.items.forEach(function (obj, i) {
                 var intCategories = obj.categories.length;
-                console.log('intCategories', intCategories);
-                obj.categories.map(function (category, j) {
-                    console.log('j', j);
-                    if (category === 'italiano') {
-                        console.log('ita', i);
+                for (var j = 0; j < obj.categories.length; j++) {
+                    if (obj.categories[j] === 'italiano') {
                         return contentsIta.push(obj);
-                    } 
-                    if (category !== 'italiano' && intCategories === j + 1){
-                        console.log('en', i);
-                        return contentsEn.push(obj);
+                    } else if (obj.categories[j] !== 'italiano' && intCategories === j + 1) {
+                        contentsEn.push(obj);
                     }
-                });
-
-
-
+                }
             })
-               const currentPage = Scrivito.currentPage();
-        const path = currentPage.path();
-      
+            const currentPage = Scrivito.currentPage();
+            const path = currentPage.path();
 
-        if (path.includes('/lang/en')) {
-            
-            contents = contentsEn;
-            console.log('contentsEn', contentsEn);
-        } else if (path.includes('/lang/it')) {
-            contents = contentsIta;
-            console.log('contentsIta', contentsIta);
-        }
+
+            if (path.includes('/lang/en')) {
+                contents = contentsEn;
+            } else if (path.includes('/lang/it')) {
+                contents = contentsIta;
+            }
             this.setState({
                 posts: contents
             });
-            
+
         })
-                    .catch(error => {
-                        console.log(error);
-                    });
+                .catch(error => {
+                    console.log(error);
+                });
         ;
     }
     render() {
         const currentPage = Scrivito.currentPage();
         const path = currentPage.path();
-      var title='';
-
+        var title = '';
         if (path.includes('/lang/en')) {
-      
             moment.locale('en');
-             title = 'Go to the post';
+            title = 'Go to the post';
         } else if (path.includes('/lang/it')) {
             moment.locale('it');
-             title = 'Vai al post';
+            title = 'Vai al post';
         }
-      
+
         return (
                 this.state.posts.map(function (obj, i) {
                     const data = moment(obj.pubDate).format("l");
