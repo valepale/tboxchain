@@ -324,6 +324,23 @@ h6,
     height: 1px;
     background: rgba(111, 111, 111, 0.2);
 }
+.border-bottom-header {
+    display: block;
+    position: relative;
+    padding: 10px 0 20px 0;
+    text-align: center;
+}
+.border-bottom-header:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin: 0 0 0 -20px;
+    width: 40px;
+    height: 1px;
+    background: rgba(111, 111, 111, 0.2);
+}
 .bg-greydark .border-bottom:after {
     background: rgba(111, 111, 111, 0.7);
 }
@@ -3143,7 +3160,7 @@ _:-ms-fullscreen,
 }
 
 @media (max-width: $screen-sm-max) {
-     .border-bottom:after, .page-list-headline:after {
+     .border-bottom-header:after {
         background: white
     }
 }
@@ -3178,7 +3195,7 @@ _:-ms-fullscreen,
     .navbar-brand img{
         margin: 0 auto;
     }
-    .border-bottom:after, .page-list-headline:after {
+    .border-bottom-header:after {
         background: white
     }
 }
