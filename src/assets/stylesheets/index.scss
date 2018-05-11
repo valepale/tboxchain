@@ -39,6 +39,7 @@ $slick-font-path: "~slick-carousel/slick/fonts/";
 @import "~slick-carousel/slick/slick.scss";
 @import "~slick-carousel/slick/slick-theme.scss";
 
+
 /* logo versions
 ================================================== */
 
@@ -113,6 +114,8 @@ $input-border-focus: $btn-primary-color !default;
 @import "_social_cards";
 @import "_grid_layout_editor";
 @import "_icon_editor";
+@import "_page_top";
+@import "_social";
 
 @import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Source+Sans+Pro:300,400,600,700");
 
