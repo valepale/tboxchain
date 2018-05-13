@@ -1,7 +1,7 @@
 import * as Scrivito from 'scrivito';
-
-Scrivito.provideWidgetClass('MediumWidget', {
+Scrivito.provideWidgetClass('DiconoDiNoiWidget', {
   attributes: {
-   
   }
 });
+
+

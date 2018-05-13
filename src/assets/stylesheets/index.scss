@@ -116,6 +116,7 @@ $input-border-focus: $btn-primary-color !default;
 @import "_icon_editor";
 @import "_page_top";
 @import "_social";
+@import "_dicono_di_noi";
 
 @import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Source+Sans+Pro:300,400,600,700");
 
@@ -3163,7 +3164,7 @@ _:-ms-fullscreen,
 }
 
 @media (max-width: $screen-sm-max) {
-     .border-bottom-header:after {
+    .border-bottom-header:after {
         background: white
     }
 }
@@ -3219,3 +3220,88 @@ _:-ms-fullscreen,
 .text-color-black {
     color: #716f73 !important;
 }
+.f-right {
+    float: right;
+}
+/* Colors, Dark */
+
+.footer-widget s a {
+    color:#8a8a8a !important;
+}
+
+.footer-widget ul li a:hover{
+    background-color:#232323 !important !important;
+}
+
+.footer-widget h4 {
+    color:#d0d0d0 !important;
+}
+
+.footer-widget li{
+    border-color:#3d4142 !important;
+}
+
+.footer-widget .footer_bottom a.social:hover{
+    background-color: #2b2b2b !important;
+    color: #fff !important;
+}
+
+.footer-widget ul li a:hover{
+    color:white !important;
+}
+
+.footer-widget ul li a:hover:before{
+    color:white !important;
+}
+
+.footer-widget .footer_bottom{
+    border-top:1px solid #2b2b2b !important;
+}
+
+.bar ul {
+		padding-left: 0px;
+		list-style: none;
+	}
+
+	.footer-widget  ul li{
+		padding: 0;
+		border-bottom:1px solid #3d4142;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+
+
+	.footer-widget  ul li a{
+		padding:10px 0;
+		display: block;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+
+	.footer-widget  ul li a:before{
+		content: "\f105";
+		margin-left: 0;
+		margin-right: 5px;
+		color: #959494;
+		top: 0;
+		left:0;
+		position: relative;
+		font-family: 'FontAwesome';
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+
+	.footer-widget  ul li a:hover{
+		padding-left:3px;
+	}
+
+	.footer-widget  ul li a:hover:before{
+		left:3px;
+	}
+
+	.footer-widget  ul li:last-child{
+		border-bottom:none;
+	}
