@@ -57,15 +57,15 @@ class DiconoDiNoi extends React.Component {
                     <div style={border}>
                         <img src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/eb77d80f7df06376/2ca85e579793/v/72805777b91d/5.jpg" alt="" width="" heigth=""/>                     
                         <h3>                   
-                            <a href="http://veented.info/crexis/red-hair/" style={textNone}>Post from Blog</a>
+                            <a href="http://veented.info/crexis/red-hair/" style={textNone}>Potenza, addio alle recensioni fasulle online</a>
                         </h3>
                         <p className="post-details">
                             <i className="fa fa-clock-o"></i>
-                            on 18 Mar, 2016					<i className="fa fa-user"></i>
-                            Posted By <span className="colored">Michael</span>
+                            11 Maggio 2018					<i className="fa fa-user"></i>
+                            Posted By <span className="colored">ANNA MARTINO</span>
                         </p>
                         <p className="post_message">
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that...
+                        <p>Validare le recensioni turistiche on line attraverso il protocollo blockchain, il database in cui sono registrate tutte le transazioni fatte in Bitcoin, la moneta “virtuale” che permette di operare senza l’intermediazione delle banche. La metodologia individuata è quella della TboxChain...
                         </p>
                         </p>
                         <a href="http://veented.info/crexis/red-hair/" className="post_read_more_button ex-link uppercase" style={textNone}>LEGGI</a>
