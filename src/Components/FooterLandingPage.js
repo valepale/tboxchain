@@ -1,28 +1,31 @@
 import React from 'react';
-        import Helmet from 'react-helmet';
-        import googleMap from '../utils/google_map.js'
+import Helmet from 'react-helmet';
+import googleMap from '../utils/google_map'
+
         class FooterLandingPage extends React.Component {
-        constructor(props) {
+    constructor(props) {
         super(props);
-                }
+    }
 
-        componentDidMount () {
+    componentDidMount() {
         const script = document.createElement("script");
-                script.src =  "../utils/google_map.js" ;
-                script.async = true;
-                document.body.appendChild(script);
-        }
+        script.text = '\'' + googleMap +'\'';
+        script.async = true;
+        this.instance.appendChild(script);
+        console.log('script', script);
+    }
 
-        render() {
+    render() {
         const google = {
-        height:'400px'
+            height: '400px'
         }
         return (
+                <div className="vntd-gmap" ref={el => (this.instance = el)}>	
+                    <div id="google-map-233" style={google}></div>
+                </div>
 
-    <div className="vc_row-full-width"></div>
+                )
+    }
+}
 
-                                )
-                                }
-                        }
-
-                        export default FooterLandingPage
+export default FooterLandingPage

@@ -1,5 +1,7 @@
-function googleMap() {
-  var latlng = new google.maps.LatLng(41.862274, -87.701328);
+jQuery(document).ready(function () {
+
+    'use strict';
+    var latlng = new google.maps.LatLng(41.862274, -87.701328);
 
     var myOptions = {
         zoom: 15,
@@ -88,11 +90,8 @@ function googleMap() {
     var infowindow2 = new google.maps.InfoWindow({
         content: contentStringSecond
     });
-      
+
     google.maps.event.addListener(marker2, 'click', function (e) {
-    infowindow2.open(map, this);
+        infowindow2.open(map, this);
     })
-
-}
-
-export default googleMap;
+});
