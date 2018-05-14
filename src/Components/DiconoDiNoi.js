@@ -55,7 +55,7 @@ class DiconoDiNoi extends React.Component {
         return (
                 <Slider {...settings}>
                     <div style={border}>
-                        <img src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/eb77d80f7df06376/2ca85e579793/v/72805777b91d/5.jpg" alt="" width="" heigth=""/>                     
+                        <img src="https://preview-cdn.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/02878d2aef70be93/5bbd52e4256c/v/66aeca2aa20c/repubblica-logo.png?Expires=1526295075&Signature=PWWXrqfhBEDiDQsfczxOFuyJmms3WOYP00ms~ETOP8ABDrImqpBOh9VhQsjFOax1WrQVIJzK0Zz04O-xBikgCh6gdswlolNzPFtjU49B4ueCsJYlHEegN80U99Qi5ug3UtZo3NpqHSg8YFNDawpD~nQceGqMvqnKs4qpMomQAqATJ9Mgo9IV7uLuxlIabTU2ARbPX8h2x7PGtQr7ySTuOecy4UomLb2DyP10LbNA79Rim4p8khhTm7k0O8ezhJHWUq06RnX3Fey6jrLlbNdXhjt2wALrMiy8I2Qw3zozuBDPuFt1DLC3mzdWIK~KDCJ6GFtuZimwNZ-TNm7sWWO4lA__&Key-Pair-Id=APKAJT35SHFXB63YHCPQ" alt="" width="" heigth=""/>                     
                         <h3>                   
                             <a target="_blank" href="http://napoli.repubblica.it/cronaca/2018/05/11/news/potenza_addio_alle_recensioni_fasulle_online-196092323/?refresh_ce" style={textNone}>Potenza, addio alle recensioni fasulle online</a>
                         </h3>
@@ -71,9 +71,9 @@ class DiconoDiNoi extends React.Component {
                         <a target="_blank" href="http://napoli.repubblica.it/cronaca/2018/05/11/news/potenza_addio_alle_recensioni_fasulle_online-196092323/?refresh_ce" className="post_read_more_button ex-link uppercase" style={textNone}>LEGGI</a>
                     </div>
                     <div style={border}>
-                        <img src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/eb77d80f7df06376/2ca85e579793/v/72805777b91d/5.jpg" alt="" width="" heigth=""/>                     
+                        <img src="https://preview-cdn.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/2778beeac38fda7e/80a0f9c3d039/v/841de9f3abbd/Graduatoria-Top-Italian-Destinations.jpg?Expires=1526295075&Signature=kHh61xoAlWU4R8I~kiKXiwkjO4bSRP7wfUqiG82v2W3U-U5paJB4bks2yTKGNRhAjXJCIbh0H1GpkGXCxWLDCSxv5S3izDAUT92SLHIC4T1jVtXba8BII4CSyKuATojzDZ3UM~mRqLkvzwO5DlapGyIa2cgVEeucAO1UWu1SJNBSN2Y7qVCdQb6d5DGsYQAVDEEdgR5cnE9-tNMdun~NzJ~SGjXj048W4RZVu9M6fnmpCLLVFLVDfakfnK2fMmPq68mwZeltys-HFQh7X1079zS1xYccav3bN-e7UpiYQrsklHv8g0UqZQ8vO2K-aM-W2EQWzA2kzIgsZLr4KyxwlQ__&Key-Pair-Id=APKAJT35SHFXB63YHCPQ" alt="" width="" heigth=""/>                     
                         <h3>                   
-                            <a target="_blank" href="http://www.factorympresa.invitalia.it/news/-/blogs/factorympresa-turismo-selezionate-le-20-migliori-startup-che-parteciperanno-all-accelerathon-di-napoli?_33_redirect=http%3A%2F%2Fwww.factorympresa.invitalia.it%2Fnews%3Fp_p_id%3D33%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-1%26p_p_col_count%3D1%26_33_struts_action%3D%252Fblogs%252Fview" style={textNone}>Factorympresa Turismo: selezionate le 20 migliori startup che parteciperanno all’Accelerathon di Napoli</a>
+                            <a target="_blank" href="http://www.factorympresa.invitalia.it/news/-/blogs/factorympresa-turismo-selezionate-le-20-migliori-startup-che-parteciperanno-all-accelerathon-di-napoli?_33_redirect=http%3A%2F%2Fwww.factorympresa.invitalia.it%2Fnews%3Fp_p_id%3D33%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-1%26p_p_col_count%3D1%26_33_struts_action%3D%252Fblogs%252Fview" style={textNone}>Selezionate le 20 migliori startup che parteciperanno all’Accelerathon di Napoli</a>
                         </h3>
                         <p className="post-details">
                             <i className="fa fa-clock-o"></i>
@@ -87,7 +87,7 @@ class DiconoDiNoi extends React.Component {
                         <a target="_blank" href="http://www.factorympresa.invitalia.it/news/-/blogs/factorympresa-turismo-selezionate-le-20-migliori-startup-che-parteciperanno-all-accelerathon-di-napoli?_33_redirect=http%3A%2F%2Fwww.factorympresa.invitalia.it%2Fnews%3Fp_p_id%3D33%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-1%26p_p_col_count%3D1%26_33_struts_action%3D%252Fblogs%252Fview" className="post_read_more_button ex-link uppercase" style={textNone}>LEGGI</a>
                     </div>
                     <div style={border}>
-                        <img src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/eb77d80f7df06376/2ca85e579793/v/72805777b91d/5.jpg" alt="" width="" heigth=""/>                     
+                        <img src="https://preview-cdn.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/053fe00da322c6cc/24538bde322e/v/047eafbb3ff6/logo_nova.png?Expires=1526295075&Signature=Sq~cRFdyd~ppGmPEUjZqJQPFpQODjwA6Ch1TEPoWi5Ad6kbFNczz0rvpu483C6Ei1Pj4NtJc~gX0KlUR1hGk6-j3UcWTCebKdk-MwPtAziwMxUiB9z5mZ4PQddxRGsLXDDyNdc9lcLraCaJVNov9G2wx7yD2aThJw9MgH5loPHKtqAWV8w90mimDspZzaCW7dXNCj-jhE2dSv26HNfQbSeaZeZUh~88ZgABkt2Uj4Y4pZyoAbPIIoBTH92pRiE~QESVGrjVlCwEAhwcfLLUMQMx7AUrgEqhY0h3z~aMbcb65aRy2HCS1dQZNEki4d0noOfv~dsGv5PiiPwZcLzdimw__&Key-Pair-Id=APKAJT35SHFXB63YHCPQ" alt="" width="" heigth=""/>                     
                         <h3>                   
                             <a  target="_blank" href="http://vincenzomoretti.nova100.ilsole24ore.com/2018/05/01/i-sogni-di-michele-storie-di-silicio-di-stringhe-di-codice-e-di-sonno-perduto/" style={textNone}>I sogni di Michele. Storie di silicio, di stringhe di codice e di sonno perduto </a>
                         </h3>
