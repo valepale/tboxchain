@@ -9,8 +9,8 @@ class PageFacebook extends React.Component {
 
     render() {
         return (
-                <FacebookProvider appId="952232271499119">
-                    <Page href="https://www.facebook.com/valeria.palermo.144/" tabs="timeline" />
+                <FacebookProvider appId="274911069718102">
+                    <Page href="https://www.facebook.com/tboxchain/" tabs="timeline" />
                 </FacebookProvider>
                 
 
