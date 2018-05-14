@@ -1,0 +1,38 @@
+Scrivito.load(() =>   img = Scrivito.Obj.get('a4a5874a30710fe2')).then(result =>   img.get('blob').url() );
+src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/8c3f40efe4ede8ab/134b1dea65af/v/e8509adcb5c1/layout_set_logo.png"
+src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/053fe00da322c6cc/24538bde322e/v/6081d04e2e15/logo_nova.png"
+src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/2778beeac38fda7e/80a0f9c3d039/v/aad121555d59/Graduatoria-Top-Italian-Destinations.jpg"
+.client-logos-background.client-logos .client-logo{
+		margin:0 5px;
+	}
+
+.client-logos-background.client-logos a{
+		padding:40px;
+		height: 120px;
+		background-color:rgba(255,255,255,0.05);
+	}
+
+div.client-logos a{
+		display: inline-block;
+		/* text-align: center; */
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		opacity: .4;
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+		-webkit-transition: all 0.4s;
+		-moz-transition: all 0.4s;
+		transition: all 0.4s;
+		cursor: pointer;
+	}
+
+	div.client-logos a:hover{
+		-webkit-filter: grayscale(0%);
+		filter: grayscale(0%);
+		opacity: 1;
+	}
+.vc_parallax>* {
+    /* position: relative; */
+    /* z-index: 1; */
+}
