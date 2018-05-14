@@ -8,10 +8,8 @@ class Medium extends React.Component {
         super(props);
 
         this.state = {
-            posts: [],
-            title: ''
-        }
-
+            posts: []
+        };
     }
 
     componentDidMount() {

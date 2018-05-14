@@ -2903,12 +2903,6 @@ _:-ms-fullscreen,
     background-color: $brand-secondary;
 }
 
-@media (max-width: 767px) {
-    .text-right,
-    .text-left {
-        text-align: center;
-    }
-}
 
 .panel-padding {
     margin: 10px 0;
@@ -3193,14 +3187,21 @@ _:-ms-fullscreen,
         margin-top: 30px;
         text-align: center !important;
     }
-    footer ul{
-        text-align: center !important;
-    }
+
     .navbar-brand img{
         margin: 0 auto;
     }
     .border-bottom-header:after {
         background: white
+    }
+    .socials {
+        text-align: center
+    }
+    .texts{
+        display: none
+    }
+    .footerTitle2 {
+        margin-top: 20px
     }
 }
 .parallax-window {
@@ -3259,49 +3260,49 @@ _:-ms-fullscreen,
 }
 
 .bar ul {
-		padding-left: 0px;
-		list-style: none;
-	}
+    padding-left: 0px;
+    list-style: none;
+}
 
-	.footer-widget  ul li{
-		padding: 0;
-		border-bottom:1px solid #3d4142;
-		-webkit-transition: all 0.3s;
-		-moz-transition: all 0.3s;
-		transition: all 0.3s;
-	}
+.footer-widget  ul li{
+    padding: 0;
+    border-bottom:1px solid #3d4142;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
 
 
-	.footer-widget  ul li a{
-		padding:10px 0;
-		display: block;
-		-webkit-transition: all 0.3s;
-		-moz-transition: all 0.3s;
-		transition: all 0.3s;
-	}
+.footer-widget  ul li a{
+    padding:10px 0;
+    display: block;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
 
-	.footer-widget  ul li a:before{
-		content: "\f105";
-		margin-left: 0;
-		margin-right: 5px;
-		color: #959494;
-		top: 0;
-		left:0;
-		position: relative;
-		font-family: 'FontAwesome';
-		-webkit-transition: all 0.3s;
-		-moz-transition: all 0.3s;
-		transition: all 0.3s;
-	}
+.footer-widget  ul li a:before{
+    content: "\f105";
+    margin-left: 0;
+    margin-right: 5px;
+    color: #959494;
+    top: 0;
+    left:0;
+    position: relative;
+    font-family: 'FontAwesome';
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
 
-	.footer-widget  ul li a:hover{
-		padding-left:3px;
-	}
+.footer-widget  ul li a:hover{
+    padding-left:3px;
+}
 
-	.footer-widget  ul li a:hover:before{
-		left:3px;
-	}
+.footer-widget  ul li a:hover:before{
+    left:3px;
+}
 
-	.footer-widget  ul li:last-child{
-		border-bottom:none;
-	}
+.footer-widget  ul li:last-child{
+    border-bottom:none;
+}
