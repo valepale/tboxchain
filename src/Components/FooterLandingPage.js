@@ -20,7 +20,7 @@ import Helmet from 'react-helmet';
             height: '400px'
         }
         return (
-                <div className="vntd-gmap" ref={el => (this.instance = el)}>	
+                <div className="vntd-gmap">	
                     <div id="google-map-233" style={google}></div>
                 </div>
 
