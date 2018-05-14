@@ -18,11 +18,14 @@
 	}
 	
 		.news .box .details h3 a {
-			color: #444;
+			color: #3d4142;
 			transition: color .3s;
 			-webkit-transition: color .3s;
 			-moz-transition: color .3s;
 		}
+                .slick-slide a{
+                    color: #3d4142;
+                }
 
 	.news .box .details p {
 		margin:15px 0 8px;
@@ -63,7 +66,7 @@
 
 	 p.post_message{
 		font-size:13px;
-		color:#aaa;
+		color:#48829a;
 	}
 
 	 a.post_read_more_button{
