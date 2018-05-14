@@ -7,7 +7,7 @@ import googleMap from '../utils/google_map'
         super(props);
     }
 
-    componentDidMount()\ {
+    componentDidMount() {
         const script = document.createElement("script");
         script.innerHTML = '\'' + googleMap +'\'';
         script.async = true;
