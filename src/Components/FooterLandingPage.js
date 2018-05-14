@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-//import googleMap from '../utils/google_map'
+
 
         class FooterLandingPage extends React.Component {
     constructor(props) {
@@ -9,7 +9,7 @@ import Helmet from 'react-helmet';
 
     componentDidMount() {
         const script = document.createElement("script");
-        //script.text = '\'' + googleMap +'\'';
+       
         script.async = true;
         this.instance.appendChild(script);
         console.log('script', script);
