@@ -22,7 +22,7 @@ class LinkedinPage extends React.Component {
         script2.type = "IN/CompanyProfile";
         script2.setAttribute('data-id', 'tboxchain');
         script2.setAttribute('data-format', 'inline');
-        script2.setAttribute('data-width', '350');
+        script2.setAttribute('data-width', '340');
         this.instance.appendChild(script2);
     }
 
