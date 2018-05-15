@@ -1086,6 +1086,7 @@ footer {
         display: block;
         /*padding: 20px 0;*/
         margin: 0 auto;
+        margin-top: 0 important;
         width: 145px;
     }
 
@@ -3169,6 +3170,9 @@ _:-ms-fullscreen,
 }
 
 @media (max-width: $screen-sm-max) {
+    .navbar-search-toggle {
+        margin-top: 0px !important
+    }
     .navbar-header {
         margin-top: 0 !important
     }
@@ -3178,6 +3182,9 @@ _:-ms-fullscreen,
 }
 
 @media (max-width: $screen-xs-max) {
+    .navbar-search-toggle {
+        margin-top: 0px !important
+    }
     .navbar-header {
         margin-top: 0 !important
     }
