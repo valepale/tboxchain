@@ -3155,7 +3155,7 @@ _:-ms-fullscreen,
 }
 
 @media (max-width: $screen-md-max) {
-}
+    }
 
 @media (max-width: $screen-sm-max) {
     .border-bottom-header:after {
@@ -3202,6 +3202,9 @@ _:-ms-fullscreen,
     }
     .footerTitle2 {
         margin-top: 20px
+    }
+    #loghi img {
+        width: 70% !important
     }
 }
 .parallax-window {
@@ -3313,3 +3316,4 @@ _:-ms-fullscreen,
 .fb-page span {
         height: 300px !important;
     }
+
