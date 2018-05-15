@@ -54,7 +54,7 @@ class FullNavigation extends React.Component {
                                 />
                             <Logo scrolled={ scrolled } navigationStyle={ navigationStyle } />
                             <LanguageSwitch />
-                            <SearchIcon toggleSearch={ toggleSearch } />
+                           
                         </div>
                 
                         <BootstrapCollapse in={ this.state.expanded }>

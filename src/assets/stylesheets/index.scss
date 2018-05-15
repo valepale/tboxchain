@@ -745,7 +745,8 @@ footer {
     @extend .text-hide;
     height: 75px;
     padding: 0;
-    padding-top: 3px;
+    padding-top: 7px;
+    margin-left: 0px !important
 }
 .navbar-brand img {
     margin: 0;
@@ -755,6 +756,7 @@ footer {
 }
 .navbar-default {
     background-color: inherit;
+    
 }
 .navbar-default .navbar-nav > li > a,
 .navbar-nav > li > a {
