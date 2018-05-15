@@ -735,9 +735,9 @@ footer {
 
 .navbar {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    min-height: 75px;
+    min-height: 113px;
     border: none;
-    font-family: "Titillium Web Bold"
+    font-family: "Titillium Web Bold"   
 }
 .navbar-brand {
     /* background: $logo-dark no-repeat center center / contain; */
@@ -745,8 +745,9 @@ footer {
     @extend .text-hide;
     height: 75px;
     padding: 0;
-    padding-top: 7px;
-    margin-left: 0px !important
+    padding-top: 17px;
+    margin-left: 0px !important;
+    float:  right !important
 }
 .navbar-brand img {
     margin: 0;
@@ -1109,6 +1110,7 @@ footer {
     .navbar-collapse {
         padding: 0;
         border: 0;
+        margin-top: 20px !important
     }
     .navbar .caret {
         display: none;

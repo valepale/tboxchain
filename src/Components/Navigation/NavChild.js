@@ -106,6 +106,7 @@ const Dropdown = Scrivito.connect(({ child, open, toggleDropdown, ...otherProps 
         }
       />
     </li>
+     
   );
 });
 

@@ -45,15 +45,15 @@ class FullNavigation extends React.Component {
         return (
                 <nav className={ classNames.join(' ') } >
                     <div className="container">
-                        <SearchBox toggleSearch={ toggleSearch } showSearch={ showSearch } />
-                
+                        <LanguageSwitch />
+                       
                         <div className="navbar-header">
                             <CollapseToggle
                                 expanded={ this.state.expanded }
                                 toggleExpanded={ this.toggleExpanded }
                                 />
                             <Logo scrolled={ scrolled } navigationStyle={ navigationStyle } />
-                            <LanguageSwitch />
+                            
                            
                         </div>
                 
