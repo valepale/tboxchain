@@ -3306,3 +3306,7 @@ _:-ms-fullscreen,
 .footer-widget  ul li:last-child{
     border-bottom:none;
 }
+.fb-page  iframe {
+    height: 300px !important;
+    border-bottom: 1px solid #AAA !important;
+}
