@@ -3182,6 +3182,14 @@ _:-ms-fullscreen,
 }
 
 @media (max-width: $screen-xs-max) {
+    #pageLanding .colorPrimary {
+        margin: 0px !important;
+    }
+
+    #pageLanding.container {
+        margin-top: 0px !important
+    }
+    
     .navbar-search-toggle {
         margin-top: 0px !important
     }
@@ -3340,5 +3348,11 @@ _:-ms-fullscreen,
 .fb-page span {
     height: 300px !important;
 }
+#pageLanding .colorPrimary {
+    color: #48829a !important;
+    margin: 80px;
+}
 
-
+#pageLanding.container {
+    margin-top: 20px !important
+}
