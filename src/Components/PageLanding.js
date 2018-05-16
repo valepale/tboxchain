@@ -7,9 +7,9 @@ super(props);
 }
 
 componentDidMount() {
-document.getElementsByClassName("navbar-header")[0].style.display="none";
-        document.getElementsByClassName("navbar-collapse collapse")[0].remove();
-        document.getElementsByClassName("footer")[0].remove();
+//document.getElementsByClassName("navbar-header")[0].style.display="none";
+//        document.getElementsByClassName("navbar-collapse collapse")[0].remove();
+//        document.getElementsByClassName("footer")[0].remove();
 }
 
 componentWillUnmount() {
