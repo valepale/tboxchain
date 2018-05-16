@@ -7,6 +7,8 @@ import GoogleAnalytics from './Components/GoogleAnalytics';
 import Navigation from './Components/Navigation';
 import PageTop from './Components/PageTop';
 import NotFoundErrorPage from './Components/NotFoundErrorPage';
+import CookieConsent from './Components/CookieConsent';
+
 
 export default function App() {
     return (
@@ -17,6 +19,7 @@ export default function App() {
                         <Scrivito.CurrentPage />
                         <NotFoundErrorPage />
                     </div>
+                    
                     <Footer />
                     <CurrentPageMetaData />
                     <GoogleAnalytics />

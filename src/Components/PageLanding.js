@@ -27,8 +27,8 @@ return (
         <div className="col-lg-4 text-center minHeight">
             <img src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/1814bc74ba833d01/1c1d0f439d95/v/0adb90bf1417/5.png" alt="" width="" heigth="" />
         </div>
-        <div className="col-lg-4 text-center minHeight displayNone">
-        sdf
+        <div className="col-lg-4 text-center minHeight">
+        <video src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/1ef8efc52c309819/38b66ae9b0bc/tbox-animation-3.mp4#t=0.01" controls="" width="100%"></video>
         </div>
         
         
