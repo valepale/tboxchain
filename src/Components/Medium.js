@@ -62,6 +62,7 @@ class Medium extends React.Component {
             moment.locale('it');
             title = 'Vai al post';
         }
+   
 
         return (
                 this.state.posts.map(function (obj, i) {
@@ -76,7 +77,11 @@ class Medium extends React.Component {
                         textDecoration: 'none'
                     };
 
-                    return <div className="col-lg-6" key={i}><a key={i} style={aStyle} href={obj.link} target="_blank" title={title}><div><img key={i} src={obj.thumbnail} kay={i}/></div><div><h3 key={i}><strong>{obj.title}</strong></h3> </div><div><p>{contentExtract}...</p></div><p key={i} className="text-color-verde">{obj.author}<br /><i key={i} className="fa fa-calendar fa-1x" ></i><span style={spanStyle}>&nbsp;{data}</span></p></a></div>
+                    return <div className="col-lg-3 box" key={i}>
+                    <a key={i} style={aStyle} href={obj.link} target="_blank" title={title}>
+                    <div><img key={i} src={obj.thumbnail} kay={i}/>
+                    </div>
+                    <div><h3 key={i}><strong>{obj.title}</strong></h3> </div><div><p>{contentExtract}...</p></div><p key={i} className="text-color-verde">{obj.author}<br /><i key={i} className="fa fa-calendar fa-1x" ></i><span style={spanStyle}>&nbsp;{data}</span></p></a></div>
 
                 })
                 )
