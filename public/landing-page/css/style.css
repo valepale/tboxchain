@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Titillium Web'), local('Titillium Web'),
+        url('../fonts/titilliumWeb-Light.ttf') format('truetype')
+}
+
+body{
+   font-family: 'Titillium Web',sans-serif !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
 .barraVideo {
     height: 300px !important;
         line-height: 300px;
@@ -9,21 +25,40 @@
    
 }
 .m-t-30 {
-    padding: 100px
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 90px;
+    padding-bottom: 40px;
 }
 .video {
     height: 300px
 }
 img:hover { 
     cursor: pointer;
-  outline: 2px solid #48829a; 
+  outline: 3px solid #48829a; 
 } 
+.gif {
+    width: 100%
+}
+.bottoni img {
+    width: 100%
+}
+
+.certificated1{
+        display: none
+    }
+    .certificated2{
+        display: inline
+    }
 
 
-
-
-
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 900px) {
+    .certificated1{
+        display: inline
+    }
+    .certificated2{
+        display: none
+    }
 .barraVideo {
     height: 100% !important;
     line-height: 18px;
@@ -46,6 +81,9 @@ img:hover {
     cursor: pointer;
   outline: 0px; 
 } 
+img {
+    padding-bottom: 15px;
+}
 
 
 }
