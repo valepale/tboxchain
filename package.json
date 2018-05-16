@@ -70,6 +70,7 @@
     "babelify": "^6.0.2",
     "moment": "^2.22.1",
     "node-fetch": "^1.7.3",
+    "react-cookie-banner": "^4.0.0",
     "react-facebook": "^5.0.3",
     "react-icons": "^2.2.7",
     "react-linkedin-sdk": "^1.0.8",

@@ -63,7 +63,7 @@ const NavSingleChild = Scrivito.connect(({ child, open, ...otherProps }) => {
       className={ classNames.join(' ') }
       { ...otherProps }
     >
-      <Scrivito.LinkTag to={ child }>
+      <Scrivito.LinkTag to={ child } >
         { child.get('title') || '<untitled>' }
       </Scrivito.LinkTag>
     </li>

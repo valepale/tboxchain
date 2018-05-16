@@ -28,6 +28,7 @@ Scrivito.configureContentBrowser({
             'Homepage',
             'Job',
             'LandingPage',
+            'PageLanding',
             'Page',
             'Redirect',
             'SearchResults',
@@ -35,6 +36,10 @@ Scrivito.configureContentBrowser({
           options: {
             Page: {
               title: 'Standard pages',
+              icon: 'sheet',
+            },
+            PageLanding: {
+              title: 'Page Landing',
               icon: 'sheet',
             },
             LandingPage: {

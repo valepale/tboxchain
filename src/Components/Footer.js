@@ -8,7 +8,7 @@ function Footer() {
   if (!root) { return null; }
 
   return (
-    <Scrivito.ContentTag content={ root } attribute="footer" tag="footer" />
+    <Scrivito.ContentTag content={ root } attribute="footer" tag="footer" className="footer" />
   );
 }
 

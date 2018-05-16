@@ -9,18 +9,18 @@ import PageTop from './Components/PageTop';
 import NotFoundErrorPage from './Components/NotFoundErrorPage';
 
 export default function App() {
-  return (
-    <ErrorBoundary>
-      <div>
-        <div className="content-wrapper"> 
-          <Navigation />
-          <Scrivito.CurrentPage />
-          <NotFoundErrorPage />
-        </div>
-        <Footer />
-        <CurrentPageMetaData />
-        <GoogleAnalytics />
-      </div>
-    </ErrorBoundary>
-  );
+    return (
+            <ErrorBoundary>
+                <div>
+                    <div className="content-wrapper"> 
+                        <Navigation />
+                        <Scrivito.CurrentPage />
+                        <NotFoundErrorPage />
+                    </div>
+                    <Footer />
+                    <CurrentPageMetaData />
+                    <GoogleAnalytics />
+                </div>
+            </ErrorBoundary>
+                );
 }
