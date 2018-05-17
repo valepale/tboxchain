@@ -32,11 +32,16 @@ class BaseNavChild extends React.Component {
   }
 
   render() {
+      
     const topLevelProps = {
       child: this.props.child,
       open: this.state.open,
       onClick: this.props.closeAll,
     };
+    
+    if (this.props.child.get('showInNavigation') == "no") {
+      return ""
+    }
 
     if (!this.props.expanded) {
       topLevelProps.onMouseEnter = this.toggleDropdown;
@@ -46,6 +51,8 @@ class BaseNavChild extends React.Component {
     if (this.props.child.children().length === 0) {
       return <NavSingleChild { ...topLevelProps } />;
     }
+    
+
 
     return <Dropdown toggleDropdown={ this.toggleDropdown } { ...topLevelProps } />;
   }

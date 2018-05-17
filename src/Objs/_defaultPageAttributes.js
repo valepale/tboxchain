@@ -11,6 +11,12 @@ const defaultPageAttributes = {
   }],
   navigationSection: 'widgetlist',
   title: 'string',
+  showInNavigation: ['enum', {
+    values: [
+      'yes',
+      'no',
+    ],
+  }],
 };
 
 export default defaultPageAttributes;

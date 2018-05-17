@@ -35,6 +35,7 @@ const defaultPageInitialContent = {
   })],
   navigationHeight: 'small',
   navigationBackgroundImageGradient: 'no',
+  showInNavigation: 'yes'
 };
 
 const defaultPageProperties = [
@@ -42,6 +43,7 @@ const defaultPageProperties = [
   'navigationHeight',
   'navigationBackgroundImage',
   'navigationBackgroundImageGradient',
+  'showInNavigation',
 ];
 
 export {
