@@ -5,26 +5,17 @@ import CookieBanner from 'react-cookie-banner';
 class CookieConsent extends React.Component {
       constructor(props) {
         super(props);
-        this.state = {
-           dismissOnScroll: true
-        };
+        
        
     }
 
-    toggleDismissOnScroll() {
-        setState({dismissOnScroll: !this.state.dismissOnScroll})
-    }
-
-    resetCookies() {
-        cookies.remove('accepts-cookies');
-        this.setState({accepted: false});
-    }
+   
     render() {
         const styles = {
             banner: {
                 fontFamily: 'Source Sans Pro',
                 height: 57,
-                background: 'rgba(72, 130, 154), 0.88) url(/cookie.png) 20px 50% no-repeat',
+                background: 'rgba(72, 130, 154, 0.88) url(/cookie.png) 20px 50% no-repeat',
                 backgroundSize: '30px 30px',
                 backgroundColor: '',
                 fontSize: '15px',
