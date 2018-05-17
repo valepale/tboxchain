@@ -26,7 +26,7 @@ class Loghi extends React.Component {
                                 <img src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/67000142cc649138/6646c20248dd/v/59b063596dda/Log_Bianca.png" alt="" width="" heigth="" />
                             </div>
                             <div className="col-lg-2 col-md-4 col-xs-6">
-                                <img src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/b919c1a47932f059/81ac287eea53/v/e8ba6678ff0e/Log_Bianca4.png" alt="" width="" heigth="" />
+                                <img src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/ea698de4de217efc/a58c3bf4bb5d/v/3588e9e25460/Log_Bianca_nova.png" alt="" width="" heigth="" />
                             </div>
                             <div className="col-lg-2 col-md-4 col-xs-6">
                                 <img src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/aff3778a37dbab27/2b03b6bbc96c/v/fb1bb2b293da/Log_Bianca2.png" alt="" width="" heigth="" />
@@ -37,6 +37,7 @@ class Loghi extends React.Component {
                     </section>
                 </div>
                 )
+        
     }
 
 }
