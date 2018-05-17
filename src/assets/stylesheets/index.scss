@@ -3182,6 +3182,13 @@ _:-ms-fullscreen,
 }
 
 @media (max-width: $screen-xs-max) {
+    .resp-iframe {
+    top: 0;
+    left: 0;
+        width:290px !important;
+        height:180px !important;
+    border: 0;
+}
     #pageLanding .colorPrimary {
         margin: 0px !important;
     }
@@ -3377,3 +3384,10 @@ _:-ms-fullscreen,
     height: 180px
 }
 
+.resp-iframe {
+    top: 0;
+    left: 0;
+        width:640px;
+        height:360px;
+    border: 0;
+}
