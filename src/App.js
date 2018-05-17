@@ -14,7 +14,6 @@ export default function App() {
     return (
             <ErrorBoundary>
                 <div>
-               
                     <div className="content-wrapper"> 
                         <Navigation />
                         <Scrivito.CurrentPage />

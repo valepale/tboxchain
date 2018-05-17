@@ -67,7 +67,10 @@ class CookieConsent extends React.Component {
                         onAccept={() => {}}
                         cookie="user-has-accepted-cookies"
                         buttonMessage='Chiudi'
-                      
+                        link={{
+                         msg: "More information on our use of cookies",
+                             url: "http://nocookielaw.com/"
+                         }}
                         />
                 </div>
                         );
