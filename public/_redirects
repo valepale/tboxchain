@@ -3,19 +3,23 @@
 ##
 
 # Redirect domain aliases to primary domain
-http://www.t-box.it/* https://www.tboxchain.io/:splat 301!
-http://www.tboxchain.it/* https://www.tboxchain.io/:splat 301!
-http://www.tboxchain.com/* https://www.tboxchain.io/:splat 301!
-http://www.tboxchain.info/* https://www.tboxchain.io/:splat 301!
-http://www.tboxchain.cloud/* https://www.tboxchain.io/:splat 301!
-http://www.tboxchain.eu/* https://www.tboxchain.io/:splat 301!
-http://www.t-box.it/* https://www.tboxchain.io/:splat 301!
-http://www.tboxchain.it/* https://www.tboxchain.io/:splat 301!
-http://www.tboxchain.com/* https://www.tboxchain.io/:splat 301!
-http://www.tboxchain.info/* https://www.tboxchain.io/:splat 301!
-http://www.tboxchain.cloud/* https://www.tboxchain.io/:splat 301!
-http://www.tboxchain.eu/* https://www.tboxchain.io/:splat 301!
-http://tboxchain.io/* https://www.tboxchain.io/:splat 301!
+# Redirect domain aliases to primary domain
+https://www.tboxchain.it/* https://tboxchain.io/:splat 301!
+https://www.tboxchain.com/* https://tboxchain.io/:splat 301!
+https://www.tboxchain.info/* https://tboxchain.io/:splat 301!
+https://www.tboxchain.cloud/* https://tboxchain.io/:splat 301!
+https://www.tboxchain.eu/* https://tboxchain.io/:splat 301!
+https://www.t-box.it/* https://tboxchain.io/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://tboxchain.netlify.com/* https://tboxchain.io/:splat 301!
+
+http://www.tboxchain.it/* https://tboxchain.io/:splat 301!
+http://www.tboxchain.com/* https://tboxchain.io/:splat 301!
+http://www.tboxchain.info/* https://tboxchain.io/:splat 301!
+http://www.tboxchain.cloud/* https://tboxchain.io/:splat 301!
+http://www.tboxchain.eu/* https://tboxchain.io/:splat 301!
+http://www.t-box.it/* https://tboxchain.io/:splat 301!
 
 # Scrivito routes
 /404 /index.html 404
