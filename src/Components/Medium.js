@@ -77,10 +77,10 @@ class Medium extends React.Component {
                         textDecoration: 'none'
                     };
 
-                    return <div className="col-lg-3 " key={i}>
-                    <a key={i} style={aStyle} href={obj.link} target="_blank" title={title}>
+                    return <div id="prova" className="col-lg-4">
+                    <a  style={aStyle} href={obj.link} target="_blank" title={title}>
                     
-                    <div><h3 key={i}><strong>{obj.title}</strong></h3> </div><div><p>{contentExtract}...</p></div><p key={i} className="text-color-verde">{obj.author}<br /><i key={i} className="fa fa-calendar fa-1x" ></i><span style={spanStyle}>&nbsp;{data}</span></p></a></div>
+                    <div><h3 ><strong>{obj.title}</strong></h3> </div><div><p>{contentExtract}...</p></div><p className="text-color-verde">{obj.author}<br /><i className="fa fa-calendar fa-1x" ></i><span style={spanStyle}>&nbsp;{data}</span></p></a></div>
 
                 })
                 )
