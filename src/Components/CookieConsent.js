@@ -24,7 +24,7 @@ class CookieConsent extends React.Component {
             banner: {
                 fontFamily: 'Source Sans Pro',
                 height: 57,
-                background: 'rgba(52, 64, 81, 0.88) url(/cookie.png) 20px 50% no-repeat',
+                background: 'rgba(72, 130, 154), 0.88) url(/cookie.png) 20px 50% no-repeat',
                 backgroundSize: '30px 30px',
                 backgroundColor: '',
                 fontSize: '15px',
@@ -67,10 +67,7 @@ class CookieConsent extends React.Component {
                         onAccept={() => {}}
                         cookie="user-has-accepted-cookies"
                         buttonMessage='Chiudi'
-                        link={{
-                         msg: "More information on our use of cookies",
-                             url: "http://nocookielaw.com/"
-                         }}
+                        link={<a href='https://www.tboxchain.io/normativa-cookie-816e7e8670b938e6' target='_blank'>Leggi di più</a>}
                         />
                 </div>
                         );
