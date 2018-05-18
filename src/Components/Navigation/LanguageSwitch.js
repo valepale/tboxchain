@@ -5,7 +5,7 @@ import getHomepage from '../../utils/getHomepage';
 function LanguageSwitch() {
   const homepages = [...Scrivito.getClass('Homepage').all()];
   return (
-    <ul className="nav navbar-nav text-center">       
+    <ul className="nav navbar-nav text-center navbar-search-toggle">       
         <li>
          { homepages.map(homepage =>
           <Scrivito.LinkTag to={ homepage } className="d-inline-block text-uppercase">
