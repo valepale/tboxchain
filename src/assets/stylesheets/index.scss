@@ -1072,7 +1072,7 @@ footer {
 @media (max-width: $screen-md-max) {
     .navbar-search-toggle {
         background-color: transparent !important;
-        margin-top: 15px !important
+        padding-top: 15px !important
     }
     .navbar-search-toggle:after {
         display: none;
@@ -1081,7 +1081,7 @@ footer {
 @media (max-width: $screen-md-min) {
     .navbar-search-toggle {
         background-color: transparent !important;
-        margin-top: 15px !important
+        padding-top: 15px !important
     }
     .navbar-toggle {
         float: left;
