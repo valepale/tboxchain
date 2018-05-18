@@ -128,7 +128,7 @@ class Navigation extends React.Component {
           <NavigationSection heightClassName={ heightClassName } />
           <ScrollToNextSectionLink heightClassName={ heightClassName } />
         </Scrivito.BackgroundImageTag>
-        <ScrollElement name="nextSection" />
+   
       </React.Fragment>
     );
   }
