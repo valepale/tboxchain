@@ -33,7 +33,7 @@ body{
 .video {
     height: 300px
 }
-img:hover { 
+.bottoni img:hover { 
     cursor: pointer;
   outline: 3px solid #48829a; 
 } 
@@ -77,7 +77,7 @@ img:hover {
     padding-right: 15px !important;
         padding-bottom: 30px !important;
 }
-img:hover { 
+.bottoni img:hover { 
     cursor: pointer;
   outline: 0px; 
 } 
