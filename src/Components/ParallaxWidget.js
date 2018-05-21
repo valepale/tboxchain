@@ -1,8 +1,9 @@
 import React from 'react';
 import axios from 'axios';
 import Responsive from 'react-responsive-decorator';
+import { Parallax } from 'react-parallax';
 
-class Parallax extends React.Component {
+class ParallaxWidget extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -21,15 +22,10 @@ class Parallax extends React.Component {
                 isMobile: true
             });
         });
-        const script = document.createElement("script");
-        console.log('this.props.urlImage', this.props.urlImage);
-        script.innerHTML = "$('." + this.props.title + "').parallax({imageSrc: \"" + this.props.urlImage + "\"});";
-        script.async = true;
-        this.interval = setTimeout(() => this.instance.appendChild(script), 1000);
     }
 
     componentWillUnmount() {
-        clearInterval(this.interval);
+        //clearInterval(this.interval);
     }
 
     render() {
@@ -48,16 +44,20 @@ class Parallax extends React.Component {
         return (
                 <div>
                     {isMobile ?
-                                 <h2 className="h2 text-center no-margin border-bottom-header" style={h2MobileStyle}>{this.props.text}</h2>
+                                    <h2 className="h2 text-center no-margin border-bottom-header" style={h2MobileStyle}>{this.props.text}</h2>
                                 : <div>
-                                    <div className={backgroundStyle} ref={el => (this.instance = el)}>
-                                        <h2 style={h2Style} >{this.props.text}</h2>
-                                    </div>
+                                   
+                                    <Parallax bgImage={this.props.urlImage} bgStyle={{background: "rgba(255, 255, 255, 0.5)"}}
+                                             blur={{ min: -500 }} strength={800}>
+                                        <div style={{height: 300, background: "rgba(255, 255, 255, 0.5)" }}>
+                                            <h2 style={h2Style} >{this.props.text}</h2>
+                                        </div>
+                                    </Parallax>
                                 </div>
                     }
                 </div>
-                )
-    }
+                        )
+            }
 
-}
-export default Responsive(Parallax);
+        }
+        export default Responsive(ParallaxWidget);
