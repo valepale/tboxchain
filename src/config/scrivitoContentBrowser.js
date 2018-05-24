@@ -32,6 +32,7 @@ Scrivito.configureContentBrowser({
             'Page',
             'Redirect',
             'SearchResults',
+            'DiconoDiNoiPost'
           ],
           options: {
             Page: {
@@ -48,6 +49,10 @@ Scrivito.configureContentBrowser({
             },
             BlogPost: {
               title: 'Blog posts',
+              icon: 'pen',
+            },
+            DiconoDiNoiPost: {
+              title: 'Dicono di noi posts',
               icon: 'pen',
             },
             Author: {
