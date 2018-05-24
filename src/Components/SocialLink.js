@@ -28,8 +28,11 @@ class SocialLink extends React.Component {
                                         <i className="fa fa-facebook url"></i></a>
                                     <a className="social social-twitter twitter" href="https://twitter.com/tboxchain" target="_blank">
                                         <i className="fa fa-twitter"></i></a>
+                                    <a className="social social-youtube youtube" href="https://www.youtube.com/watch?v=BthH3bRXz5k" target="_blank">
+                                        <i className="fa fa-youtube"></i></a>                    
                                     <a className="social social-linkedin linkedin" href="https://it.linkedin.com/company/tboxchain" target="_blank">
                                         <i className="fa fa-linkedin"></i></a>
+                
                                 </div>
                 
                             </div>
