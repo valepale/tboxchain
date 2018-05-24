@@ -57,6 +57,22 @@ class DiconoDiNoi extends React.Component {
                     <div style={border}>
                         <img src="" alt="" width="" heigth=""/>                     
                         <h3>                   
+                            <a target="_blank" href="http://www.turismo.beniculturali.it/news/accelerathon-napoli-vincitori/" style={textNone}>Accelerathon Napoli: i vincitori</a>
+                        </h3>
+                        <p className="post-details">
+                            <i className="fa fa-clock-o"></i>
+                            21 Maggio 2018 <i className="fa fa-user"></i>
+                            <span className="colored"> Turismo, beniculturali</span>
+                        </p>
+                        <p className="post_message">
+                        <p>Dal braccialetto con servizi turistici integrati alla piattaforma web che fa incontrare domanda e offerta di viaggiatori e host tra le startup vincenti di FactorYmpresa. E ancora, un sistema di certificazione delle “famigerate” recensioni online strutturato su tecnologia blokchain con un brevetto depositato basato su due prove chiave: proof of  location e...
+                        </p>
+                        </p>
+                        <a target="_blank" href="http://www.turismo.beniculturali.it/news/accelerathon-napoli-vincitori/" className="post_read_more_button ex-link uppercase" style={textNone}>LEGGI</a>
+                    </div>
+                    <div style={border}>
+                        <img src="" alt="" width="" heigth=""/>                     
+                        <h3>                   
                             <a target="_blank" href="http://napoli.repubblica.it/cronaca/2018/05/11/news/potenza_addio_alle_recensioni_fasulle_online-196092323/?refresh_ce" style={textNone}>Potenza, addio alle recensioni fasulle online</a>
                         </h3>
                         <p className="post-details">
@@ -101,6 +117,10 @@ class DiconoDiNoi extends React.Component {
                         </p>
                         </p>
                         <a target="_blank" href="http://vincenzomoretti.nova100.ilsole24ore.com/2018/05/01/i-sogni-di-michele-storie-di-silicio-di-stringhe-di-codice-e-di-sonno-perduto/" className="post_read_more_button ex-link uppercase" style={textNone}>LEGGI</a>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
                     </div>
                 
                 </Slider>
