@@ -8,6 +8,7 @@ const DiconoDiNoiPost = Scrivito.provideObjClass('DiconoDiNoiPost', {
     publishedAt: 'string',
     description: 'string',
     link: 'string',
+    lingua: 'string',
     ...metaDataAttributes,
   },
 });

@@ -8,12 +8,5 @@ import SchemaDotOrg from '../../Components/SchemaDotOrg';
 
 Scrivito.provideComponent('DiconoDiNoiPost', ({ page }) =>
   <div>
-    <section className='bg-white'>
-      <div className='container'>
-        <Scrivito.ContentTag tag="h1" className="h2" content={ page } attribute="title" />
-        <Scrivito.ContentTag tag="h2" className="h4" content={ page } attribute="description" />
-      </div>
-    </section>
-    <BlogPostAuthor author={ page.get('author') } />
   </div>
 );

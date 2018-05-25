@@ -2,7 +2,7 @@ import React from 'react';
 import * as Scrivito from 'scrivito';
 import Slider from "react-slick";
 
-const DiconoDiNoiProva = Scrivito.connect(({}) => {
+const DiconoDiNoiPost = Scrivito.connect(({}) => {
 
     var settings = {
         dots: true,
@@ -51,12 +51,28 @@ const DiconoDiNoiProva = Scrivito.connect(({}) => {
     let blogPosts = Scrivito.getClass('DiconoDiNoiPost').all().order('publishedAt', 'desc');
     let posts = [...blogPosts];
     var isOne = false;
-    if ((posts.length) % 3 === 1) {
+    var isTwo = false;
+    var LEGGI = '';
+    const currentPage = Scrivito.currentPage();
+    const path = currentPage.path();
+    var contents = [];
+    posts.forEach(function (post) {
+        if (post.get('lingua') === 'it' && path.includes('/lang/it')) {
+            LEGGI = 'LEGGI';
+            contents.push(post);
+        } else if (post.get('lingua') === 'en' && path.includes('/lang/en')) {
+            LEGGI = 'READ';
+            contents.push(post);
+        }
+    })
+    if ((contents.length) % 3 === 1) {
         isOne = true;
+    } else if ((contents.length) % 3 === 2) {
+        isTwo = true;
     }
     return (
             <Slider {...settings}>
-                {posts.map((post) => (
+                {contents.map((post) => (
                                         <div style={border}>
                                             <h3>
                                                 <a target="_blank" href={post.get('link')}  style={textNone}>{post.get('title')}</a>
@@ -68,15 +84,13 @@ const DiconoDiNoiProva = Scrivito.connect(({}) => {
                                             <p>{post.get('description')}</p>
                                     
                                             </p>
-                                            <a target="_blank" href={post.get('link')} className="post_read_more_button ex-link uppercase" style={textNone}>LEGGI</a>
+                                            <a target="_blank" href={post.get('link')} className="post_read_more_button ex-link uppercase" style={textNone}>{LEGGI}</a>
                                         </div>
 
                                         ))}
-                {isOne ? ([<div></div>, <div></div>]) : (<div></div>)}
+                {isOne ? ([<div></div>, <div></div>]) : (null)}
+                {isTwo ? (<div></div>) : (null)}
             </Slider>
             );
-
 });
-
-
-export default DiconoDiNoiProva
+export default DiconoDiNoiPost

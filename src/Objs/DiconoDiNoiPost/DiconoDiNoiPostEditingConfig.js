@@ -30,6 +30,9 @@ Scrivito.provideEditingConfig('DiconoDiNoiPost', {
     link: {
       title: 'Link della pagina esterna',
     },
+    lingua : {
+       title: 'Lingua'
+    }
   },
   properties: [
     'title',
@@ -37,6 +40,7 @@ Scrivito.provideEditingConfig('DiconoDiNoiPost', {
     'publishedAt',
     'description',
     'link',
+    'lingua'
   ],
   propertiesGroups: [socialCardsPropertiesGroup, metaDataPropertiesGroup],
   initialContent: {

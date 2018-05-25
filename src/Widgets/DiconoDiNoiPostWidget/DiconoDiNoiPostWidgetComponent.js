@@ -1,13 +1,13 @@
 import * as React from 'react';
 import * as Scrivito from 'scrivito';
-import DiconoDiNoiProva from '../../Components/DiconoDiNoiProva';
+import DiconoDiNoiPost from '../../Components/DiconoDiNoiPost';
 
 
 Scrivito.provideComponent('DiconoDiNoiPostWidget', () => {
 
 
     return (
-            <DiconoDiNoiProva>
-            </DiconoDiNoiProva>
+            <DiconoDiNoiPost>
+            </DiconoDiNoiPost>
             );
 });
