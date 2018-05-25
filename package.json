@@ -75,6 +75,7 @@
     "react-icons": "^2.2.7",
     "react-linkedin-sdk": "^1.0.8",
     "react-parallax": "^1.7.0",
+    "react-responsive": "^4.1.0",
     "react-responsive-decorator": "0.0.1",
     "react-twitter-widgets": "^1.7.1",
     "typestyle": "^1.7.2"

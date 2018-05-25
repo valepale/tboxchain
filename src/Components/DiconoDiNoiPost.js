@@ -1,6 +1,9 @@
 import React from 'react';
 import * as Scrivito from 'scrivito';
 import Slider from "react-slick";
+import MediaQuery from 'react-responsive';
+
+
 
 const DiconoDiNoiPost = Scrivito.connect(({}) => {
 
@@ -70,9 +73,12 @@ const DiconoDiNoiPost = Scrivito.connect(({}) => {
     } else if ((contents.length) % 3 === 2) {
         isTwo = true;
     }
+
     return (
-            <Slider {...settings}>
-                {contents.map((post) => (
+            <div>
+                <MediaQuery minWidth={600}>
+                    <Slider {...settings}>
+                        {contents.map((post) => (
                                         <div style={border}>
                                             <h3>
                                                 <a target="_blank" href={post.get('link')}  style={textNone}>{post.get('title')}</a>
@@ -82,15 +88,37 @@ const DiconoDiNoiPost = Scrivito.connect(({}) => {
                                             </p>
                                             <p className="post_message">
                                             <p>{post.get('description')}</p>
-                                    
+                            
                                             </p>
                                             <a target="_blank" href={post.get('link')} className="post_read_more_button ex-link uppercase" style={textNone}>{LEGGI}</a>
                                         </div>
 
+                                                ))}
+                        {isOne ? ([<div></div>, <div></div>]) : (null)}
+                        {isTwo ? (<div></div>) : (null)}
+                    </Slider>
+                </MediaQuery>
+                <MediaQuery maxWidth={599}>
+                    <Slider {...settings}>
+                        {contents.map((post) => (
+                                <div style={border}>
+                                    <h3>
+                                        <a target="_blank" href={post.get('link')}  style={textNone}>{post.get('title')}</a>
+                                    </h3>
+                                    <p className="post-details"><i className="fa fa-clock-o"></i>{post.get('publishedAt')} <i className="fa fa-user"></i>
+                                        <span className="colored">{post.get('author')}</span>
+                                    </p>
+                                    <p className="post_message">
+                                    <p>{post.get('description')}</p>
+                    
+                                    </p>
+                                    <a target="_blank" href={post.get('link')} className="post_read_more_button ex-link uppercase" style={textNone}>{LEGGI}</a>
+                                </div>
+
                                         ))}
-                {isOne ? ([<div></div>, <div></div>]) : (null)}
-                {isTwo ? (<div></div>) : (null)}
-            </Slider>
+                    </Slider>
+                </MediaQuery>
+            </div>
             );
 });
 export default DiconoDiNoiPost
