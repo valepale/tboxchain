@@ -72,6 +72,7 @@
     "node-fetch": "^1.7.3",
     "react-cookie-banner": "^4.0.0",
     "react-facebook": "^5.0.3",
+    "react-html5video": "^2.5.1",
     "react-icons": "^2.2.7",
     "react-linkedin-sdk": "^1.0.8",
     "react-parallax": "^1.7.0",
