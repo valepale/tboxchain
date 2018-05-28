@@ -14,6 +14,7 @@ export default function App() {
     return (
             <ErrorBoundary>
                 <div>
+                 <CookieConsent />
                     <div className="content-wrapper"> 
                         <Navigation />
                         <Scrivito.CurrentPage />

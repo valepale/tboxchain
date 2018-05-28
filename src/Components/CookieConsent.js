@@ -12,13 +12,14 @@ class CookieConsent extends React.Component {
    
     render() {
         const styles = {
-            banner: {
+           banner: {
                 fontFamily: 'Source Sans Pro',
-                height: 57,
+                height: 'auto',
                 background: 'rgba(72, 130, 154, 0.88) url(/cookie.png) 20px 50% no-repeat',
                 backgroundSize: '30px 30px',
                 backgroundColor: '',
                 fontSize: '15px',
+		position: 'fixed',
                 fontWeight: 600
             },
             button: {
@@ -40,7 +41,7 @@ class CookieConsent extends React.Component {
                 padding: '9px 67px',
                 lineHeight: 1.3,
                 textAlign: 'left',
-                marginRight: 244,
+                marginRight: '8%',
                 color: 'white'
             },
             link: {
@@ -53,6 +54,7 @@ class CookieConsent extends React.Component {
         return (
                 <div>
                     <CookieBanner
+                        dismissOnScrollThreshold='9999999999999999'
                         styles={styles}
                         message="Questo sito utilizza cookies tecnici e di profilazione e consente l'uso di cookies di 'terze parti' che permettono di inviarti informazioni inerenti le tue preferenze. Se non desideri riceverli ti invitiamo a non navigare questo sito ulteriormente."
                         onAccept={() => {}}
