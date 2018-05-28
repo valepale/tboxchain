@@ -121,7 +121,10 @@ import 'react-html5video/dist/styles.css';
                 <p>{post.get('description')}</p>
                 </p>
                 {(post.get('video') !== '') ?
-                <video src={post.get('video')} controls="" width="100%"></video>
+                 (<Video width="100%" >
+                    <source src={post.get('video')} type="video/webm" />
+                    <track label="English" kind="subtitles" srcLang="en" src="http://source.vtt" default />
+                </Video>)
                                 : (<p></p>)}
                 {(post.get('showButton') === 'yes') ?
                                 (<a target="_blank" href={post.get('link')} className="post_read_more_button ex-link uppercase" style={textNone}>{LEGGI}</a>)
