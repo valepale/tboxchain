@@ -33,6 +33,7 @@ Scrivito.provideEditingConfig('DiconoDiNoiPost', {
     lingua : {
        title: 'Lingua'
     }
+    
   },
   properties: [
     'title',
@@ -40,11 +41,13 @@ Scrivito.provideEditingConfig('DiconoDiNoiPost', {
     'publishedAt',
     'description',
     'link',
-    'lingua'
+    'lingua',
+    'showButton'
   ],
   propertiesGroups: [socialCardsPropertiesGroup, metaDataPropertiesGroup],
   initialContent: {
     ...metaDataInitialContent,
     publishedAt: () => new Date(),
+    showButton: 'yes'
   },
 });

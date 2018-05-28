@@ -73,6 +73,7 @@ const DiconoDiNoiPost = Scrivito.connect(({}) => {
     } else if ((contents.length) % 3 === 2) {
         isTwo = true;
     }
+    
 
     return (
             <div>
@@ -87,10 +88,12 @@ const DiconoDiNoiPost = Scrivito.connect(({}) => {
                                                 <span className="colored">{post.get('author')}</span>
                                             </p>
                                             <p className="post_message">
-                                            <p>{post.get('description')}</p>
+                                            <p dangerouslySetInnerHTML={{__html: post.get('description')}}></p>
                             
                                             </p>
-                                            <a target="_blank" href={post.get('link')} className="post_read_more_button ex-link uppercase" style={textNone}>{LEGGI}</a>
+                                            {(post.get('showButton') === 'yes') ?
+                                             (<a target="_blank" href={post.get('link')} className="post_read_more_button ex-link uppercase" style={textNone}>{LEGGI}</a>)
+                                                     : (<p></p>)}
                                         </div>
 
                                                 ))}
