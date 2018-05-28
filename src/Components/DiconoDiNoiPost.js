@@ -115,9 +115,13 @@ const DiconoDiNoiPost = Scrivito.connect(({}) => {
                                     </p>
                                     <p className="post_message">
                                     <p>{post.get('description')}</p>
-                    
                                     </p>
-                                    <a target="_blank" href={post.get('link')} className="post_read_more_button ex-link uppercase" style={textNone}>{LEGGI}</a>
+                                    {(post.get('video') !== '') ?
+                                                        <video src={post.get('video')} controls="" width="100%"></video>
+                                                            : (<p></p>)}
+                                    {(post.get('showButton') === 'yes') ?
+                                                            (<a target="_blank" href={post.get('link')} className="post_read_more_button ex-link uppercase" style={textNone}>{LEGGI}</a>)
+                                                            : (<p></p>)}
                                 </div>
 
                                         ))}
