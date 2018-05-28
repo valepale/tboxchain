@@ -27,6 +27,10 @@ Scrivito.provideEditingConfig('DiconoDiNoiPost', {
       title: 'Description',
       description: 'Breve descrizione...',
     },
+    video: {
+        title: 'Link video',
+        description: 'Video',
+    },
     link: {
       title: 'Link della pagina esterna',
     },
@@ -40,6 +44,7 @@ Scrivito.provideEditingConfig('DiconoDiNoiPost', {
     'author',
     'publishedAt',
     'description',
+    'video',
     'link',
     'lingua',
     'showButton'
