@@ -2,6 +2,7 @@ import React from 'react';
 import * as Scrivito from 'scrivito';
 import Slider from "react-slick";
 import MediaQuery from 'react-responsive';
+import formatDate from '../utils/formatDate';
 import { DefaultPlayer as Video } from 'react-html5video';
 import 'react-html5video/dist/styles.css';
         
@@ -76,6 +77,7 @@ import 'react-html5video/dist/styles.css';
 
 
         return (
+               
 <div>
     <MediaQuery minWidth={600}>
         <Slider {...settings}>
@@ -84,7 +86,7 @@ import 'react-html5video/dist/styles.css';
                 <h3>
                     <a target="_blank" href={post.get('link')}  style={textNone}>{post.get('title')}</a>
                 </h3>
-                <p className="post-details"><i className="fa fa-clock-o"></i>{post.get('publishedAt')} <i className="fa fa-user"></i>
+                <p className="post-details"><i className="fa fa-clock-o"></i>{path.includes('/lang/it') ? formatDate(post.get('publishedAt'), 'dd-mm-yyyy') : formatDate(post.get('publishedAt'), 'mm-dd-yyyy')} <i className="fa fa-user"></i>
                     <span className="colored">{post.get('author')}</span>
                 </p>
                 <p className="post_message">
@@ -114,7 +116,7 @@ import 'react-html5video/dist/styles.css';
                 <h3>
                     <a target="_blank" href={post.get('link')}  style={textNone}>{post.get('title')}</a>
                 </h3>
-                <p className="post-details"><i className="fa fa-clock-o"></i>{post.get('publishedAt')} <i className="fa fa-user"></i>
+                <p className="post-details"><i className="fa fa-clock-o"></i>{path.includes('/lang/it') ? formatDate(post.get('publishedAt'), 'dd-mm-yyyy') : formatDate(post.get('publishedAt'), 'mm-dd-yyyy')} <i className="fa fa-user"></i>
                     <span className="colored">{post.get('author')}</span>
                 </p>
                 <p className="post_message">

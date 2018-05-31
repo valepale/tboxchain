@@ -5,7 +5,7 @@ const DiconoDiNoiPost = Scrivito.provideObjClass('DiconoDiNoiPost', {
     attributes: {
         title: 'string',
         author: 'string',
-        publishedAt: 'string',
+        publishedAt: 'date',
         description: 'string',
         video: 'string',
         link: 'string',
