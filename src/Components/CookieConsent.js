@@ -60,7 +60,7 @@ class CookieConsent extends React.Component {
                         onAccept={() => {}}
                         cookie="user-has-accepted-cookies"
                         buttonMessage='Chiudi'
-                        link={<a href='https://www.tboxchain.io/normativa-cookie-816e7e8670b938e6' target='_blank'>Leggi di più</a>}
+                        link={<a href='https://www.tboxchain.io/informativa-cookies-816e7e8670b938e6' target='_blank'>Leggi di più</a>}
                         />
                 </div>
                         );
