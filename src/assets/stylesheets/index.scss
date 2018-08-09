@@ -3252,7 +3252,10 @@ _:-ms-fullscreen,
         margin-top: 20px
     }
     #loghi img {
-        width: 70% !important
+        width: 100% !important
+    }
+    #loghi > .container > div {
+        padding: 0
     }
 }
 .parallax-window {

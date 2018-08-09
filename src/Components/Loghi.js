@@ -11,33 +11,42 @@ class Loghi extends React.Component {
         return (
                 <div>
                     <section id="loghi" className="bg-greydark">
-                        <div className="container">
+                        <div className="container text-center">
+                            <div className="col-lg-3 col-md-4 col-xs-6">
+                                <a href="http://polomusealeumbria.beniculturali.it/?page_id=45" target="_blank"><img className="no-margin" src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/ed1e9cf86e40eecf/b7d1ef97b3c0/v/828cb8299846/loghi_bianchi3_mod.png" alt="" width="" heigth="" /></a>
+                            </div>
+                            <div className="col-lg-3 col-md-4 col-xs-6">
+                                <a href="https://offerte.bestwestern.it/sconto-prenotazioni-anticipate/?SOB=A28&IATA=00158520&gclid=EAIaIQobChMItcfg9N_f3AIVC-h3Ch2LjQ18EAAYASAAEgJxrfD_BwE" target="_blank">  <img className="no-margin" src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/b4a778040087f851/cf91be9de9f7/v/8cbf6bdcf23a/loghi_bianchi2_mod.png" alt="" width="" heigth="" /></a>
+                            </div>
+                            <div className="col-lg-3 col-md-4 col-xs-6">
+                                <a href="https://www.fic.it/" target="_blank"> <img className="no-margin" src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/66aed7396bc241ee/cfdc00dbb9da/v/f5199cf9b8b7/loghi_soprafooter.png" alt="" width="" heigth="" /></a>
+                            </div>
+                            <div className="col-lg-3 col-md-4 col-xs-6">
+                                <a href="https://gallerianazionaledellumbria.it/" target="_blank"> <img className="no-margin" src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/421ecd0e3c0cfdcf/ccb797e3f274/v/21bf6e2ee3b2/loghi_bianchi5_mod.png" alt="" width="" heigth="" /></a>
+                            </div>
+                            <div className="col-lg-3 col-md-4 col-xs-6">
+                                <img className="no-margin" src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/90e4c48f7515741d/f0d6fb836a13/v/8f0039a06a00/loghi_bianchi_mod.png" alt="" width="" heigth="" />
+                            </div>
+                            <div className="col-lg-3 col-md-4 col-xs-6">
+                                <a href="https://www.volodellangelo.com/" target="_blank"> <img className="no-margin" src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/641fbbba3ab1ebf9/37d85b43d02f/v/fe33c92cbbb8/Log_Bianca2_mod.png" alt="" width="" heigth="" /></a>
+                            </div>
+                            <div className="col-lg-3 col-md-4 col-xs-6">
+                                <a href="http://vincenzomoretti.nova100.ilsole24ore.com/tag/lavoro-ben-fatto/?refresh_ce=1" target="_blank"><img className="no-margin" src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/ec729f3e2ba20ef1/d776542824ec/v/381867772ada/Log_Bianca_nova_mod.png" alt="" width="" heigth="" /></a>
+                            </div>
+                            <div className="col-lg-3 col-md-4 col-xs-6">
+                                <a href="http://www.viadellemeraviglie.it/" target="_blank"><img className="no-margin" src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/bf1b7a8631017373/eb01e49704af/v/7d024e4e5310/Log_Bianca5.png" alt="" width="" heigth="" /></a>
+                            </div>
                 
-                            <div className="col-lg-2 col-md-4 col-xs-6">
-                                <img src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/4f7802df0998c05c/1fe26c577185/v/8c81fa8168cf/Log_Bianca5.png" alt="" width="" heigth="" />
+                            <div className="col-lg-3 col-md-4 col-xs-6">
+                                <img className="no-margin" src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/1cba03cee17f60ae/a37d77c5a51a/v/208a1db78abf/Log_Bianca6.png" alt="" width="" heigth="" />
                             </div>
-                            <div className="col-lg-2 col-md-4 col-xs-6">
-                                <img src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/df851536869150bd/da1388678756/v/c06a94a21f79/Log_Bianca3.png" alt="" width="" heigth="" />
-                            </div>
-                            <div className="col-lg-2 col-md-4 col-xs-6">
-                                <img src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/addd8c1de9a1b191/049307c397ec/v/d3af9fc8c3a1/Log_Bianca6.png" alt="" width="" heigth="" />
-                            </div>
-                            <div className="col-lg-2 col-md-4 col-xs-6">
-                                <img src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/67000142cc649138/6646c20248dd/v/59b063596dda/Log_Bianca.png" alt="" width="" heigth="" />
-                            </div>
-                            <div className="col-lg-2 col-md-4 col-xs-6">
-                                <img src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/ea698de4de217efc/a58c3bf4bb5d/v/3588e9e25460/Log_Bianca_nova.png" alt="" width="" heigth="" />
-                            </div>
-                            <div className="col-lg-2 col-md-4 col-xs-6">
-                                <img src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/aff3778a37dbab27/2b03b6bbc96c/v/fb1bb2b293da/Log_Bianca2.png" alt="" width="" heigth="" />
-                            </div>
-                
                         </div>
+                
                 
                     </section>
                 </div>
                 )
-        
+
     }
 
 }
