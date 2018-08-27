@@ -75,7 +75,6 @@ import 'react-html5video/dist/styles.css';
         isTwo = true;
         }
 
-
         return (
                
 <div>
@@ -83,6 +82,11 @@ import 'react-html5video/dist/styles.css';
         <Slider {...settings}>
             {contents.map((post) => (
             <div style={border}>
+                {post.get('logo') !== null ? <Scrivito.ImageTag
+                    content={ post.get('logo') }
+                    className="img-responsive"
+                    alt={ post.get('alternativeText') }
+                  />: null}
                 <h3>
                     <a target="_blank" href={post.get('link')}  style={textNone}>{post.get('title')}</a>
                 </h3>

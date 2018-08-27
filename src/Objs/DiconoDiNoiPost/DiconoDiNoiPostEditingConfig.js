@@ -13,6 +13,9 @@ Scrivito.provideEditingConfig('DiconoDiNoiPost', {
   thumbnail: `/${blogPostObjIcon}`,
   attributes: {
     ...metaDataEditingConfigAttributes,
+    logo: {
+        title: 'Link immagine',
+    },
     title : {
         title: 'Title',
     },
@@ -40,6 +43,7 @@ Scrivito.provideEditingConfig('DiconoDiNoiPost', {
     
   },
   properties: [
+    'logo',
     'title',
     'author',
     'publishedAt',

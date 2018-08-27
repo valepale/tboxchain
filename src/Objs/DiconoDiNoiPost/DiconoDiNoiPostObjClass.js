@@ -3,6 +3,7 @@ import metaDataAttributes from '../_metaDataAttributes';
 
 const DiconoDiNoiPost = Scrivito.provideObjClass('DiconoDiNoiPost', {
     attributes: {
+        logo: 'reference',
         title: 'string',
         author: 'string',
         publishedAt: 'date',
