@@ -3,80 +3,88 @@ import * as Scrivito from 'scrivito';
 import Slider from "react-slick";
 import MediaQuery from 'react-responsive';
 import formatDate from '../utils/formatDate';
-import { DefaultPlayer as Video } from 'react-html5video';
+import { DefaultPlayer as Video }
+from 'react-html5video';
 import 'react-html5video/dist/styles.css';
-        
-        const DiconoDiNoiPost = Scrivito.connect(({}) => {
 
-        var settings = {
-        dots: true,
-                infinite: false,
-                speed: 500,
-                arrows: false,
+const DiconoDiNoiPost = Scrivito.connect(({}) => {
+
+var settings = {
+dots: true,
+        infinite: false,
+        speed: 500,
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        initialSlide: 0,
+        responsive: [
+        {
+        breakpoint: 1024,
+                settings: {
                 slidesToShow: 3,
-                slidesToScroll: 3,
-                initialSlide: 0,
-                responsive: [
-                {
-                breakpoint: 1024,
-                        settings: {
-                        slidesToShow: 3,
-                                slidesToScroll: 3,
-                                infinite: true,
-                                dots: true
-                        }
-                },
-                {
-                breakpoint: 600,
-                        settings: {
-                        slidesToShow: 2,
-                                slidesToScroll: 2,
-                                initialSlide: 2
-                        }
-                },
-                {
-                breakpoint: 480,
-                        settings: {
-                        slidesToShow: 1,
-                                slidesToScroll: 1
-                        }
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
                 }
-                ]
+        },
+        {
+        breakpoint: 600,
+                settings: {
+                slidesToShow: 2,
+                        slidesToScroll: 2,
+                        initialSlide: 2
+                }
+        },
+        {
+        breakpoint: 480,
+                settings: {
+                slidesToShow: 1,
+                        slidesToScroll: 1
+                }
+        }
+        ]
+};
+        const textNone = {
+        textDecoration: 'none',
+                color: '#3d4142 !important'
         };
-                const textNone = {
-                textDecoration: 'none',
-                        color: '#3d4142 !important'
-                };
-                const border = {
-                border: "15px solid #fff",
-                        display: "block",
-                        margin: "auto"
-                };
-                let blogPosts = Scrivito.getClass('DiconoDiNoiPost').all().order('publishedAt', 'desc');
-                let posts = [...blogPosts];
-                var isOne = false;
-                var isTwo = false;
-                var LEGGI = '';
-                const currentPage = Scrivito.currentPage();
-                const path = currentPage.path();
-                var contents = [];
-                posts.forEach(function (post) {
-                if (post.get('lingua') === 'it' && path.includes('/lang/it')) {
-                LEGGI = 'LEGGI';
-                        contents.push(post);
-                } else if (post.get('lingua') === 'en' && path.includes('/lang/en')) {
-                LEGGI = 'READ';
-                        contents.push(post);
-                }
+        const border = {
+        border: "15px solid #fff",
+                display: "block",
+                margin: "auto"
+        };
+        let blogPosts = Scrivito.getClass('DiconoDiNoiPost').all().order('publishedAt', 'desc');
+        let posts = [...blogPosts];
+        var isOne = false;
+        var isTwo = false;
+        var LEGGI = '';
+        const currentPage = Scrivito.currentPage();
+        const path = currentPage.path();
+        var contents = [];
+        posts.forEach(function (post) {
+//** CODICE PER widget nella sezione in inglese **//
+//                 if (post.get('lingua') === 'it' && path.includes('/lang/it')) {
+//                LEGGI = 'LEGGI';
+//                        contents.push(post);
+//                } else if (post.get('lingua') === 'en' && path.includes('/lang/en')) {
+//                LEGGI = 'READ';
+//                        contents.push(post);
+//                }
+        if (post.get('lingua') === 'it') {
+        LEGGI = 'LEGGI';
+                contents.push(post);
+        } 
+        if (path.includes('/lang/en')) {
+        LEGGI = 'READ';
+        }
                 })
-                if ((contents.length) % 3 === 1) {
+        if ((contents.length) % 3 === 1) {
         isOne = true;
         } else if ((contents.length) % 3 === 2) {
         isTwo = true;
         }
 
         return (
-               
 <div>
     <MediaQuery minWidth={600}>
         <Slider {...settings}>
@@ -84,9 +92,9 @@ import 'react-html5video/dist/styles.css';
             <div style={border}>
                 {post.get('logo') !== null ? <Scrivito.ImageTag
                     content={ post.get('logo') }
-                    className="img-responsive"
                     alt={ post.get('alternativeText') }
-                  />: null}
+                    height={'57'}
+                    />: null}
                 <h3>
                     <a target="_blank" href={post.get('link')}  style={textNone}>{post.get('title')}</a>
                 </h3>
@@ -97,18 +105,18 @@ import 'react-html5video/dist/styles.css';
                 <p>{post.get('description')}</p>
                 </p>
                 {(post.get('video') !== '') ?
-               
-                (<Video width="100%" >
+
+                        (<Video width="100%" >
                     <source src={post.get('video')} type="video/webm" />
                     <track label="English" kind="subtitles" srcLang="en" src="http://source.vtt" default />
                 </Video>)
-                                : (<p></p>)}
+                        : (<p></p>)}
                 {(post.get('showButton') === 'yes') ?
-                                (<a target="_blank" href={post.get('link')} className="post_read_more_button ex-link uppercase" style={textNone}>{LEGGI}</a>)
-                                : (<p></p>)}
+                        (<a target="_blank" href={post.get('link')} className="post_read_more_button ex-link uppercase" style={textNone}>{LEGGI}</a>)
+                        : (<p></p>)}
             </div>
 
-                                ))}
+                        ))}
             {isOne ? ([<div></div>, <div></div>]) : (null)}
             {isTwo ? (<div></div>) : (null)}
         </Slider>
@@ -117,6 +125,11 @@ import 'react-html5video/dist/styles.css';
         <Slider {...settings}>
             {contents.map((post) => (
             <div style={border}>
+                {post.get('logo') !== null ? <Scrivito.ImageTag
+                    content={ post.get('logo') }
+                    className="img-responsive"
+                    alt={ post.get('alternativeText') }
+                    />: null}
                 <h3>
                     <a target="_blank" href={post.get('link')}  style={textNone}>{post.get('title')}</a>
                 </h3>
@@ -127,20 +140,20 @@ import 'react-html5video/dist/styles.css';
                 <p>{post.get('description')}</p>
                 </p>
                 {(post.get('video') !== '') ?
-                 (<Video width="100%" >
+                (<Video width="100%" >
                     <source src={post.get('video')} type="video/webm" />
                     <track label="English" kind="subtitles" srcLang="en" src="http://source.vtt" default />
                 </Video>)
-                                : (<p></p>)}
+                : (<p></p>)}
                 {(post.get('showButton') === 'yes') ?
-                                (<a target="_blank" href={post.get('link')} className="post_read_more_button ex-link uppercase" style={textNone}>{LEGGI}</a>)
-                                : (<p></p>)}
+                (<a target="_blank" href={post.get('link')} className="post_read_more_button ex-link uppercase" style={textNone}>{LEGGI}</a>)
+                : (<p></p>)}
             </div>
 
-                                ))}
+                ))}
         </Slider>
     </MediaQuery>
 </div>
-                                );
-                        });
-                                export default DiconoDiNoiPost
+                );
+                });
+        export default DiconoDiNoiPost
