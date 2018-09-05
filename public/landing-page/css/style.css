@@ -2,8 +2,11 @@
     font-family: 'Titillium Web';
     font-style: normal;
     font-weight: 400;
-    src: local('Titillium Web'), local('Titillium Web'),
-        url('../fonts/titilliumWeb-Light.ttf') format('truetype')
+    src: url('../fonts/titillium-light-webfont.eot');
+    src: url('../fonts/titillium-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titillium-light-webfont.woff') format('woff'),
+         url('../fonts/titillium-light-webfont.ttf') format('truetype'),
+         url('../fonts/titillium-light-webfont.svg#rsuregular') format('svg');
 }
 
 body{
