@@ -31,7 +31,7 @@ class Loghi extends React.Component {
                                 <a href="https://www.volodellangelo.com/" target="_blank"> <img className="no-margin" src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/641fbbba3ab1ebf9/37d85b43d02f/v/fe33c92cbbb8/Log_Bianca2_mod.png" alt="" width="" heigth="" /></a>
                             </div>
                             <div className="col-lg-3 col-md-4 col-xs-6">
-                                <a href="http://vincenzomoretti.nova100.ilsole24ore.com/tag/lavoro-ben-fatto/?refresh_ce=1" target="_blank"><img className="no-margin" src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/ec729f3e2ba20ef1/d776542824ec/v/381867772ada/Log_Bianca_nova_mod.png" alt="" width="" heigth="" /></a>
+                                <a href="http://vincenzomoretti.nova100.ilsole24ore.com/tag/lavoro-ben-fatto/?refresh_ce=1" target="_blank"><img className="no-margin" src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/e744f9d1a468acf5/ec5949435246/v/0faa3230e536/Log_Bianca_nova_mod.png" alt="" width="" heigth="" /></a>
                             </div>
                             <div className="col-lg-3 col-md-4 col-xs-6">
                                 <a href="http://www.viadellemeraviglie.it/" target="_blank"><img className="no-margin" src="https://cdn0.scrvt.com/55526e734dfec79f05b2ccc7bbe2c4f4/bf1b7a8631017373/eb01e49704af/v/7d024e4e5310/Log_Bianca5.png" alt="" width="" heigth="" /></a>
