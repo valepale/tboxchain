@@ -18,7 +18,7 @@ Scrivito.provideComponent('ContactFormWidget', ({ widget }) => {
     <div className={ classNames.join(' ') }>
     <h3>Resta Aggiornato</h3>
     <p>Iscriviti alla mailing list per ricevere le novità e gli aggiornamenti di TBoxChain.</p>
-      <form method="post">
+      <form method="post" action="/pages/success/success_ita.html">
         <input
           type="hidden"
           name="form-name"
