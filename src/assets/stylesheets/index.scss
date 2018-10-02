@@ -3410,3 +3410,35 @@ _:-ms-fullscreen,
 .bg-brand-primary {
     background-image: linear-gradient(-90deg, #7bb3da, #0aaac4);
 }
+
+.btn-email {
+    margin-top: 14px; padding-left: 10px; padding-right: 0px;
+    .btn {
+        padding: 10px;
+    }
+}
+.no-padding {
+    padding: 0
+}
+
+@media (max-width: $screen-xs-max) {
+    .btn-email {
+       padding-left: 0;
+    }
+}
+.contact-panel-padding{
+    margin: 10px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    padding-bottom: 0px;
+    padding-top: 15px;
+    p {
+        margin: 0;
+    }
+    h3 {
+        border-bottom: 1px solid #ccc;
+    }
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.05);
+
+}

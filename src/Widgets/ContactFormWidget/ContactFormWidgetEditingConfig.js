@@ -28,7 +28,7 @@ Scrivito.provideEditingConfig('ContactFormWidget', {
     'backgroundColor',
   ],
   initialContent: {
-    buttonText: 'send message',
+    buttonText: 'OK',
     backgroundColor: 'white',
   },
 });
