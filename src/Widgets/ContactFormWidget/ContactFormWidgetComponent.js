@@ -35,7 +35,7 @@ Scrivito.provideComponent('ContactFormWidget', ({ widget }) => {
               id="email"
               name="email"
               placeholder="Email"
-              type="text"
+              type="email"
               required
             />
           </div>
