@@ -59,9 +59,9 @@ body{
     .certificated1{
         display: inline
     }
-    .certificated2{
+    /* .certificated2{
         display: none
-    }
+    } */
 .barraVideo {
     height: 100% !important;
     line-height: 18px;
